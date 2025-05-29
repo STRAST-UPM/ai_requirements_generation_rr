@@ -1,0 +1,40 @@
+Norm;M2.#;Automated requirement name;Present;Support;Hallucination;Rationale
+Help messages during the {log-on procedure} must not aid an unauthorized user, e.g., by indicating which {parts of the data} are correct or incorrect;M2.1.1;Secure Employee Log-on Procedure;Yes;H.1.1;;
+;M2.1.2;Secure System Admin and Operations Manager Log-on Procedure;Yes;H.1.1;;
+;M2.1.3;Secure Security Manager Log-on Procedure;Yes;H.1.1;;
+A security incident must be raised if a potential attempted or successful breach of {log-on controls} is detected, and, when the risk of the incident warrants it, the account shall be temporarily restricted, plus an alert shall be sent to the {account owner}, and to the {organization's system administrators}.;M2.2.1;Factory Access Control Breach Notification;No;;Yes;"Absurd; unachievable"
+;M2.2.2;Factory System Unauthorized Access Notification;No;;Yes;"Absurd; unachievable"
+;M2.2.3;Warehouse Inventory Access Breach Notification;No;;Yes;"Absurd; unachievable"
+;M2.2.4;Finished Car Registry Access Breach Notification;No;;Yes;"Absurd; unachievable"
+;M2.2.5;Transport Order Data Store Access Breach Notification;No;;Yes;"Absurd; unachievable"
+Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.;M2.3.1;Inbound Logistics Access Control;Yes;H.3.1;;
+;M2.3.2;Car Assembly Access Control;Yes;H.3.1;;
+;M2.3.3;Outbound Logistics Access Control;Yes;H.3.1;;
+{Access to data} must be controlled based on {user identity, group membership, and assigned roles};M2.4.1;User-Based Access Control for Factory Data;Yes;"H.4.1; H.4.2; H.4.3; H.4.4; H.4.5; H.4.7";;
+;M2.4.2;Role-Based Access Control for System Administration;Yes;H.4.8;;
+;M2.4.3;Access Control for Logistic Subprocesses;Yes;"H.4.1; H.4.2; H.4.3; H.4.4; H.4.5";;
+The {organization} shall maintain a record of {all privileges allocated};M2.5.1;Access Privilege Record Keeping;Yes;H.5.1;;
+;M2.5.2;System Administration Privilege Record Keeping;Yes;H.5.1;;
+;M2.5.3;Operations Management Privilege Record Keeping;Yes;H.5.1;;
+;M2.5.4;Security Management Privilege Record Keeping;Yes;H.5.1;;
+The {organization} shall regularly review {users} with privileged access rights to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access;M2.6.1;Regular Review of Privileged Access Rights for Factory Employees;Yes;H.6.1;;
+;M2.6.2;Regular Review of Privileged Access Rights for System Users;Yes;H.6.1;;
+{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using firewalls.;M2.7.1;Restricted_and_Filtered_Connection_of_Factory_Systems_to_the_Network;Yes;"H.7.1; H.7.2";;
+;M2.7.2;Restricted_and_Filtered_Connection_of_IoT_Middleware_Platform_to_the_Network;No;;No;
+;M2.7.3;Restricted_and_Filtered_Connection_of_Factorys_Logistics_Terminal_to_the_Network;Yes;"H.7.1; H.7.2";;
+;M2.7.4;Restricted_and_Filtered_Connection_of_Factorys_Employee_Systems_to_the_Network;Yes;"H.7.1; H.7.2";;
+{Network administration channels} must be segregated from {other network traffic};M2.8.1;Factory Control Network Segregation;Yes;H.8.1;;
+;M2.8.2;Supply Chain Management Network Isolation;No;;Yes;Extreme measures
+;M2.8.3;Warehouse Management Network Separation;No;;Yes;Extreme measures
+;M2.8.4;Assembly Line Management Network Segregation;No;;Yes;Extreme measures
+;M2.8.5;Quality Control Network Isolation;No;;Yes;Extreme measures
+Implement cryptographic measures to safeguard {information stored} on {mobile user} {endpoint devices} or {storage media} and transmitted over {networks};M2.9.1;Cryptographic Protection for In-Transit Data;Yes;H.9.3;;
+;M2.9.2;Cryptographic Protection for Stored Data on Endpoint Devices;No;;No;
+;M2.9.3;Cryptographic Protection for Data Stored in the System's Datastores;Yes;H.9.1;;
+Establish a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys};M2.10.1;Secure Key Management for AIDC Technologies;Yes;H.10.1;;
+;M2.10.2;Secure Key Management for Warehouse Inventory System;No;;Yes;Absurd
+;M2.10.3;Secure Key Management for Finished Car Registry;No;;Yes;Absurd
+;M2.10.4;Secure Key Management for Transport Order Data Store;No;;Yes;Absurd
+;M2.10.5;Secure Key Management for IoT Middleware Platforms;No;;Yes;Absurd
+;M2.10.6;Secure Key Management for User Management System;Yes;H.10.2;;
+Totals;;;22;;11;

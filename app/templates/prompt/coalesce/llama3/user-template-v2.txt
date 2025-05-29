@@ -1,0 +1,15 @@
+Guidelines:
+- Use descriptive and concise names for the requirements. Do not use numbering schemes (e.g., "NFR-1").
+- Pay special attention to quotes, commas, and the correct usage and spelling of domain-specific entities and jargon.
+- The requirements must be unique, and duplicates must be removed.
+- The requirements must be comprehensive and self-contained, including all the relevant information from the provided documents.
+
+Requirements document 1: '''{requirements_document_0}'''
+
+Requirements document 2: '''{requirements_document_1}'''
+
+Requirements document 3: '''{requirements_document_2}'''
+
+Requirements document 4: '''{requirements_document_3}'''
+
+Adapt the provided documents into a single list of non-functional unique domain requirements.

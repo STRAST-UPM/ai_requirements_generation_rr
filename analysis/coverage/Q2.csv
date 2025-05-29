@@ -1,0 +1,29 @@
+Q2.#,Present,Hallucination,Rationale
+Q2.1.1,Yes,,
+Q2.2.1,Yes,,
+Q2.2.2,Yes,,
+Q2.3.1,No,Yes,Out of the scope
+Q2.3.2,Yes,,
+Q2.3.3,Yes,,
+Q2.3.4,No,No,
+Q2.3.5,No,Yes,Unrealated
+Q2.4.1,No,Yes,Out of the scope
+Q2.4.2,No,Yes,Out of the scope
+Q2.4.3,Yes,,
+Q2.4.4,No,No,
+Q2.4.5,Yes,,
+Q2.5.1,Yes,,
+Q2.6.1,Yes,,
+Q2.7.1,Yes,,
+Q2.8.1,Yes,,
+Q2.9.1,No,No,
+Q2.9.2,No,Yes,Out of the scope (not required technologies in use)
+Q2.9.3,Yes,,
+Q2.9.4,Yes,,
+Q2.9.5,Yes,No,
+Q2.9.6,Yes,Yes,Overloaded
+Q2.10.1,Yes,,
+Q2.10.2,Yes,,
+Q2.10.3,No,No,
+Q2.10.4,No,Yes,Not a FR
+Q2.10.5,No,Yes,Not a FR

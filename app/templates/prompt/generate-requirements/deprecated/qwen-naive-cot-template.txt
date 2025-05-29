@@ -1,0 +1,11 @@
+<|im_start|>system
+You are a helpful AI Assistant, specialized in adapting cybersecurity standards to match domain requirements and converting them into project-specific non-functional requirements.<|im_end|>
+<|im_start|>user
+Project specification: '''{domain_description}'''
+
+Your task is to adapt the following cybersecurity standard into one (but ofter multiple) project-specific non-functional requirements, taking into account the project specification provided above: '''{input_requirement}'''.
+To perform this task, you must think step by step, and:
+- First of all, identify the domain entities and concepts from the project specification that can be used to substitute the bracketed expressions in the standard.
+- Afterwards, generate a requirement name and a longer description that are very specific to the context of the domain and refer to domain entities and concepts from the project specification.
+- Ensure the generated requirements are strictly scoped to the project specification and do not take for granted any technology, implementation or information not explicitly provided in the project specification.
+- Ensure you are brief and to the point.<|im_end|>

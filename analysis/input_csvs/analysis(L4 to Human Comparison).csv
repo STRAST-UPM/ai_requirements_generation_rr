@@ -1,0 +1,37 @@
+Norm;L4.#;Automated requirement name;Present;Support;Hallucination;Rationale
+Help messages during the {log-on procedure} must not aid an unauthorized user, e.g., by indicating which {parts of the data} are correct or incorrect;L4.1.1;Secure Access Control Feedback;No;;Yes;
+;L4.1.2;Secure Login Feedback for System Users;Yes;H.1.1;;
+;L4.1.3;Secure Authentication Feedback for Finished Car Yard Drivers;No;;Yes;
+A security incident must be raised if a potential attempted or successful breach of {log-on controls} is detected, and, when the risk of the incident warrants it, the account shall be temporarily restricted, plus an alert shall be sent to the {account owner}, and to the {organization's system administrators}.;L4.2.1;Intrusion Detection and Alert;No;;Yes;"Absurd; out of the scope"
+;L4.2.2;Anomalous Login Attempt Detection and Notification;Yes;H.2.1;;
+;L4.2.3;Real-time Monitoring and Alert System;Yes;H.2.1;;
+;L4.2.4;Automated Alert System for Suspicious Activity;No;;Yes;"Absurd; out of the scope"
+;L4.2.5;Detection and Notification of Potential Security Breaches;No;;Yes;"Absurd; out of the scope"
+Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.;L4.3.1;Authorized Supply Vehicle Access;No;;Yes;Factory access is out-of-the-scope of system cybersecurity nfrs
+;L4.3.2;Segregation of Duties for Warehouse Workers;No;;Yes;Factory access is out-of-the-scope of system cybersecurity nfrs
+;L4.3.3;Controlled Access to Assembly Line;No;;Yes;Factory access is out-of-the-scope of system cybersecurity nfrs
+;L4.3.4;Secure Storage of Finished Cars;No;;Yes;Factory access is out-of-the-scope of system cybersecurity nfrs
+;L4.3.5;Restricted Access to Logistics Terminal;No;;Yes;Factory access is out-of-the-scope of system cybersecurity nfrs
+{Access to data} must be controlled based on {user identity, group membership, and assigned roles};L4.4.1;Role-Based Access Control for Logistics and Production Data;Yes;"H.4.1; H.4.2; H.4.3; H.4.5; H.4.7";;
+;L4.4.2;Role-Based Access Control for System Administration;No;;No;
+The {organization} shall maintain a record of {all privileges allocated};L4.5.1;Audit Trail of Access Privileges;No;;No;
+;L4.5.2;Access Control for Supply Vehicles;Yes;H.5.1;;
+;L4.5.3;Access Control for Warehouse Workers;Yes;H.5.1;;
+;L4.5.4;Access Control for Employees;Yes;H.5.1;;
+;L4.5.5;Access Control for Shipping Finished Cars;Yes;H.5.1;;
+The {organization} shall regularly review {users} with privileged access rights to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access;L4.6.1;Regular Review of Privileged Access Rights;Yes;H.6.1;;
+{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using firewalls.;L4.7.1;Factory Network Access Restriction;No;;No;
+;L4.7.2;Assembly Line Network Access Restriction;No;;Yes;
+;L4.7.3;System Access Role-Based Control;Yes;H.7.1;No;
+{Network administration channels} must be segregated from {other network traffic};L4.8.1;Segregation of System Admin Channels;Yes;H.8.1;;
+;L4.8.2;Segregation of Operations Manager Channels;No;;Yes;Excessive
+;L4.8.3;Segregation of Security Manager Channels;No;;Yes;Excessive
+Implement cryptographic measures to safeguard {information stored} on {mobile user} {endpoint devices} or {storage media} and transmitted over {networks};L4.9.1;Secure Component Identification Data;Yes;H.9.2;;
+;L4.9.2;Protect Finished Car Registry Information;Yes;H.9.1;;
+;L4.9.3;Safeguard Requisition and Purchase Order Data;Yes;H.9.1;;
+;L4.9.4;Secure AIDC Data Transmission;Yes;H.9.3;;
+;L4.9.5;Protect Supply Vehicle and Driver Information;Yes;H.9.1;;
+Establish a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys};L4.10.1;Comprehensive Key Management for Component Tracking;Yes;H.10.2;;
+;L4.10.2;Secure Key Management for Car Identity and Authentication;No;;Yes;Absurd
+;L4.10.3;Key Management for Secure Communication with External Entities;No;;Yes;Absurd
+Totals;;;18;;15;

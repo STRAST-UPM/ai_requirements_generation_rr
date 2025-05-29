@@ -1,0 +1,31 @@
+Norm;G1.#;Automated requirement name;Present;Support;Hallucination;Rationale
+Help messages during the {log-on procedure} must not aid an unauthorized user, e.g., by indicating which {parts of the data} are correct or incorrect;G1.1.1;Secure Authentication Feedback;Yes;H.1.1;;
+A security incident must be raised if a potential attempted or successful breach of {log-on controls} is detected, and, when the risk of the incident warrants it, the account shall be temporarily restricted, plus an alert shall be sent to the {account owner}, and to the {organization's system administrators}.;G1.2.1;Authentication Breach Notification;Yes;H.2.1;;
+;G1.2.2;Enhanced Log-On Attempt Control;Yes;H.2.1;;
+Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.;G1.3.1;Secure Isolation of Data Stores;Yes;H.3.1;;
+;G1.3.2;Access Control for Factory Network;Yes;H.3.2;;Partial hall
+;G1.3.3;Middleware Access Security;No;;No;
+;G1.3.4;Role-Based Access Management;No;;Yes;Unrelated
+;G1.3.5;Secure AIDC System Interfaces;No;;Yes;Unrelated
+{Access to data} must be controlled based on {user identity, group membership, and assigned roles};G1.4.1;Controlled Data Access Based on Roles and Responsibilities;Yes;"H.4.5; H.4.7";;
+;G1.4.2;Data Access Control by Group Membership;Yes;H.4.7;;Partial hall
+;G1.4.3;Secure Authentication for System Interaction;No;;Yes;Unrelated
+The {organization} shall maintain a record of {all privileges allocated};G1.5.1;Factory Privilege Allocation Record Management;Yes;H.5.1;;
+;G1.5.2;Implementation of Role-Based Access Control (RBAC);No;;Yes;Unrelated
+;G1.5.3;Audit Trail for Access and Privilege Changes;No;;No;
+The {organization} shall regularly review {users} with privileged access rights to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access;G1.6.1;Privileged Access Review for System Admins;Yes;H.6.1;;
+;G1.6.2;Security Role Validation;Yes;H.6.1;;
+;G1.6.3;Operations Manager Access Audit;Yes;H.6.1;;
+{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using firewalls.;G1.7.1;Network Connection Security for Automated Systems;Yes;H.7.1;;
+;G1.7.2;Secure Middleware Communication;Yes;H.7.1;;
+;G1.7.3;AGV and Robotic System Network Integrity;Yes;H.7.1;;
+{Network administration channels} must be segregated from {other network traffic};G1.8.1;Segregated Network Channels for Administrative and Operational Traffic;Yes;H.8.1;;Rambles
+Implement cryptographic measures to safeguard {information stored} on {mobile user} {endpoint devices} or {storage media} and transmitted over {networks};G1.9.1;Cryptographic Security for Mobile Endpoint Devices;Yes;H.9.1;;
+;G1.9.2;Cryptographic Protection for Automated Guided Vehicles and Robots;No;;Yes;Absurd
+;G1.9.3;Encryption of Centralized Storage Systems;Yes;H.9.1;;
+;G1.9.4;Network Traffic Encryption;Yes;H.9.3;;
+Establish a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys};G1.10.1;Datastore Encryption Key Management;No;;Yes;"Not the keys for that; rambles"
+;G1.10.2;IoT Middleware Secure Communication;No;;Yes;Unrelated
+;G1.10.3;AGVs Data Encryption and Key Management;No;;Yes;Absurd
+;G1.10.4;Administrative Oversight of Key Management System;Yes;H.10.3;;
+Totals;;;18;;8;

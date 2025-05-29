@@ -1,0 +1,262 @@
+[
+  {
+    "nfr": "Help messages during the {log-on procedure} must not aid an unauthorized user, e.g., by indicating which {parts of the data} are correct or incorrect.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement is applicable. This is because the project involves various users with different roles, such as System admin, Operations manager, and Security manager, as well as other Employees like Access Control Manager, Dock Manager, and Shipping Manager, who will need to log on to the system to perform their duties, and therefore, the log-on procedure should not provide help messages that could aid an unauthorized user.",
+      "project_entities_relation": "After analyzing the project specification and the cybersecurity requirement, I found that the requirement relates to the following entities or concepts of the domain:\n\n- \"Log-on procedure\" relates to the system's user management and security management procedures, specifically when Employees log on to the system to perform their duties.\n- \"Help messages\" relate to the system's user interface and interaction with Employees during the log-on procedure.\n- \"Unauthorized user\" relates to any individual who is not an Employee or does not have authorized access to the system.\n- \"Parts of the data\" relate to the credentials or information that Employees provide during the log-on procedure, such as username, password, or other authentication details.\n\nThe cybersecurity requirement aims to prevent the system from providing helpful information to unauthorized users during the log-on procedure, which could potentially aid them in guessing or cracking the correct credentials. This requirement is essential to maintain the security and integrity of the system, ensuring that only authorized Employees can access the system and its data.",
+      "requirements_document": "**Secure Log-on Procedure for AI4I4 System Users**:\nThe AI4I4 system must ensure that during the log-on procedure for Employees, including System Admins, Operations Managers, Security Managers, and other authorized roles, the system does not display help messages that could aid an unauthorized user in guessing or cracking the correct credentials. This includes not indicating which parts of the data, such as username or password, are correct or incorrect.\n\n**Prevention of Unauthorized Access to AI4I4 System**:\nThe AI4I4 system must prevent unauthorized users, including those who are not Employees of the Factory or do not have authorized access to the system, from gaining access to the system's data and functionality. The system should not provide any helpful information during the log-on procedure that could potentially aid unauthorized users in accessing the system.\n\n**Protection of Employee Credentials in AI4I4 System**:\nThe AI4I4 system must protect the credentials and authentication details of Employees, including usernames, passwords, and other sensitive information, during the log-on procedure. The system should not display any information that could compromise the security of Employee credentials or allow unauthorized users to access the system.",
+      "requirements_list": [
+        {
+          "name": "Secure Log-on Feedback",
+          "description": "The AI4I4 system must not display help messages or indicators that could aid unauthorized users in guessing or cracking credentials during the log-on procedure for Employees, including System Admins, Operations Managers, Security Managers, and other authorized roles."
+        },
+        {
+          "name": "Prevention of Unauthorized System Access",
+          "description": "The AI4I4 system must prevent unauthorized users, including those who are not Employees of the Factory or do not have authorized access, from gaining access to the system's data and functionality, without providing any helpful information during the log-on procedure."
+        },
+        {
+          "name": "Protection of Employee Credentials",
+          "description": "The AI4I4 system must protect Employee credentials and authentication details, including usernames, passwords, and other sensitive information, during the log-on procedure, without displaying any information that could compromise credential security or allow unauthorized access."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "A security event must be raised if a potential attempted or successful breach of {log-on controls} is detected, e.g., sending an alert to the {user} and the {organization's system administrators} when a certain number of wrong password attempts has been reached.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement is applicable to the project because it involves user management and security procedures, which are mentioned in the project specification as part of the system's administration and management procedures, specifically under the roles of System Admin and Security Manager. The requirement aligns with the need to implement and oversee security procedures and events, such as handling potential security breaches.",
+      "project_entities_relation": "The cybersecurity requirement relates to the following entities or concepts of the domain:\n\n- {log-on controls} may be related to \"Access Gate\", \"Access Control Manager\", and the process of controlling and managing access to the Factory premises.\n- {user} could refer to any user of the system, including Employees, the Access Control Manager, the Dock Manager, the Shipping Manager, or the System Admin.\n- {organization's system administrators} likely refers to the \"System Admin\" role mentioned in the project specification.\n\nThe relationship between the requirement and the domain entities or concepts is that the requirement aims to detect and respond to potential security breaches related to log-on controls, which are crucial for managing access to the Factory premises and the system. The requirement ensures that security events are raised and alerts are sent to the relevant personnel, including system administrators and users, when a potential breach is detected.",
+      "requirements_document": "**Access Gate Breach Detection and Alert**:\nThe system must raise a security event and send an alert to the Access Control Manager and the System Admin when a certain number of wrong authentication attempts has been reached at the Access Gate, indicating a potential attempted or successful breach of access controls to the Factory premises.\n\n**System Log-on Breach Detection and Alert**:\nThe system must raise a security event and send an alert to the user (e.g., Employee, Dock Manager, Shipping Manager) and the System Admin when a certain number of wrong password attempts has been reached, indicating a potential attempted or successful breach of log-on controls to the system.",
+      "requirements_list": [
+        {
+          "name": "Access Gate Breach Detection and Alert",
+          "description": "The system must raise a security event and send an alert to the Access Control Manager and the System Admin when a certain number of wrong authentication attempts has been reached at the Access Gate, indicating a potential attempted or successful breach of access controls to the Factory premises."
+        },
+        {
+          "name": "System Log-on Breach Detection and Alert",
+          "description": "The system must raise a security event and send an alert to the user (e.g., Employee, Dock Manager, Shipping Manager) and the System Admin when a certain number of wrong password attempts has been reached, indicating a potential attempted or successful breach of log-on controls to the system."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement applies to the project. The project involves sensitive data and systems, such as the Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, Finished Car Registry, and Logistics Terminal Car Registry, which require physical or logical access controls to prevent unauthorized access and maintain the integrity of the data.",
+      "project_entities_relation": "Based on the project specification provided, I will analyze the cybersecurity requirement and infer which entities or concepts of the domain it might be related to.\n\nCybersecurity requirement: \"Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.\"\n\nFrom the project specification, I identified the following entities or concepts that could be related to this requirement:\n\n1. Factory: The Factory is the primary entity responsible for Car production, and it encompasses various areas, including the Assembly Line, Warehouse, and Finished Car Yard. Implementing physical or logical access controls to isolate sensitive applications, data, or systems within the Factory could be crucial to prevent unauthorized access or data breaches.\n2. Assembly Line: The Assembly Line is a critical area within the Factory where Cars are assembled. Access controls could be implemented to isolate sensitive systems or data related to the Assembly Line, such as production plans, Component inventory, or quality control processes.\n3. Warehouse: The Warehouse is a storage area within the Factory where Components are held until they are needed on the Assembly Line. Access controls could be implemented to isolate sensitive data or systems related to inventory management, Component tracking, or supply chain management.\n4. Finished Car Yard: The Finished Car Yard is a depot area within the Factory premises where finished Cars are stored before they are dispatched to Dealers. Access controls could be implemented to isolate sensitive systems or data related to Car inventory, shipping, or transportation.\n5. Requisitions Data Store: This data store contains information about Requisitions, which are requests made by the Car Manufacturer to Providers for Components. Implementing access controls to isolate this data store could prevent unauthorized access to sensitive information about Component procurement.\n6. Production Plan Data Store: This data store contains information about the production plan, which is used to determine the flow of Components and to update task lists for Warehouse Workers. Implementing access controls to isolate this data store could prevent unauthorized access to sensitive information about production schedules or Component allocation.\n7. Finished Car Registry: This registry contains information about finished Cars, including their location and status. Implementing access controls to isolate this registry could prevent unauthorized access to sensitive information about Car inventory or shipping.\n\nBased on these entities and concepts, I infer that the cybersecurity requirement is related to implementing physical or logical access controls to isolate sensitive applications, data, or systems within the Factory, particularly in areas such as the Assembly Line, Warehouse, Finished Car Yard, and data stores containing sensitive information about Component procurement, production plans, and Car inventory.\n\nThe relationship between the requirement and the domain entities or concepts is that access controls are necessary to prevent unauthorized access to sensitive information or systems that could impact the production process, Component procurement, or Car inventory, ultimately affecting the overall efficiency and security of the Factory's operations.",
+      "requirements_document": "**Isolation of Sensitive Factory Systems**:\nThe system must implement physical or logical access controls to isolate sensitive applications, data, or systems within the Factory, particularly in areas such as the Assembly Line, Warehouse, and Finished Car Yard. This includes controlling access to data stores containing sensitive information about Component procurement, production plans, and Car inventory.\n\n**Access Control for Requisitions Data Store**:\nThe system must implement access controls to isolate the Requisitions Data Store, ensuring that only authorized personnel can access sensitive information about Component procurement.\n\n**Production Plan Data Store Isolation**:\nThe system must implement access controls to isolate the Production Plan Data Store, preventing unauthorized access to sensitive information about production schedules or Component allocation.\n\n**Finished Car Registry Access Control**:\nThe system must implement access controls to isolate the Finished Car Registry, ensuring that only authorized personnel can access sensitive information about Car inventory or shipping.",
+      "requirements_list": [
+        {
+          "name": "Isolation of Sensitive Factory Systems",
+          "description": "The system must implement physical or logical access controls to isolate sensitive applications, data, or systems within the Factory, particularly in areas such as the Assembly Line, Warehouse, and Finished Car Yard."
+        },
+        {
+          "name": "Access Control for Requisitions Data Store",
+          "description": "The system must implement access controls to isolate the Requisitions Data Store, ensuring that only authorized personnel can access sensitive information about Component procurement."
+        },
+        {
+          "name": "Production Plan Data Store Isolation",
+          "description": "The system must implement access controls to isolate the Production Plan Data Store, preventing unauthorized access to sensitive information about production schedules or Component allocation."
+        },
+        {
+          "name": "Finished Car Registry Access Control",
+          "description": "The system must implement access controls to isolate the Finished Car Registry, ensuring that only authorized personnel can access sensitive information about Car inventory or shipping."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "{Access to data} must be controlled based on {user identity, group membership, and assigned roles}.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement applies to the project because the system involves various user roles (e.g., Access Control Manager, Dock Manager, Warehouse Manager, System Admin, Operations Manager, Security Manager) with different responsibilities and access needs, necessitating controlled access to data based on user identity, group membership, and assigned roles. This ensures that sensitive data, such as Requisitions, Supply Vehicle information, and Component tracking, is only accessible to authorized personnel.",
+      "project_entities_relation": "The cybersecurity requirement: \"{Access to data} must be controlled based on {user identity, group membership, and assigned roles}\" relates to the following entities or concepts of the domain:\n\n* {Access to data} may refer to the various datastores mentioned in the project specification, such as Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, Production Plan Data Store, Finished Car Registry, Logistics Terminal Car Registry, Purchase Order and Transport Order Data Stores.\n* {User identity} may refer to the various Employees mentioned in the project specification, such as Access Control Manager, Dock Manager, Warehouse Manager, Workers, Plant Manager, Finished Car Yard Manager, Shipping Manager, System admin, Operations manager, and Security manager.\n* {Group membership} may refer to the different departments or teams within the Factory, such as the Warehouse team, Assembly Line team, Finished Car Yard team, and Logistics team.\n* {Assigned roles} may refer to the specific roles assigned to each Employee, such as managing the Warehouse, overseeing the Assembly Line, or coordinating logistics.\n\nThe requirement suggests that access to the various datastores and systems within the Factory should be controlled based on the identity of the user, their membership in specific groups or teams, and the roles assigned to them. This is to ensure that only authorized personnel have access to sensitive data and systems, and that access is restricted to those who need it to perform their duties.",
+      "requirements_document": "**Role-Based Access Control for Warehouse Inventory**:\nThe system must control access to the Warehouse Inventory based on the user identity, group membership, and assigned roles of Employees, such as Warehouse Manager and Workers. Only authorized personnel with specific roles, such as managing the Warehouse or overseeing inventory, should be able to access and update the Warehouse Inventory.\n\n**Role-Based Access Control for Production Plan Data Store**:\nThe system must control access to the Production Plan Data Store based on the user identity, group membership, and assigned roles of Employees, such as Plant Manager and Production Planners. Only authorized personnel with specific roles, such as overseeing production planning or managing the Assembly Line, should be able to access and update the Production Plan Data Store.\n\n**Role-Based Access Control for Finished Car Registry**:\nThe system must control access to the Finished Car Registry based on the user identity, group membership, and assigned roles of Employees, such as Finished Car Yard Manager and Shipping Manager. Only authorized personnel with specific roles, such as managing the Finished Car Yard or coordinating shipping, should be able to access and update the Finished Car Registry.\n\n**Role-Based Access Control for Requisitions Data Store**:\nThe system must control access to the Requisitions Data Store based on the user identity, group membership, and assigned roles of Employees, such as Access Control Manager and Purchasing Manager. Only authorized personnel with specific roles, such as managing requisitions or overseeing procurement, should be able to access and update the Requisitions Data Store.\n\n**Role-Based Access Control for Logistics Terminal Car Registry**:\nThe system must control access to the Logistics Terminal Car Registry based on the user identity, group membership, and assigned roles of Employees, such as Shipping Manager and Logistics Coordinators. Only authorized personnel with specific roles, such as managing shipping or coordinating logistics, should be able to access and update the Logistics Terminal Car Registry.\n\n**Role-Based Access Control for Purchase Order and Transport Order Data Stores**:\nThe system must control access to the Purchase Order and Transport Order Data Stores based on the user identity, group membership, and assigned roles of Employees, such as Shipping Manager and Purchasing Manager. Only authorized personnel with specific roles, such as managing purchase orders or coordinating shipping, should be able to access and update the Purchase Order and Transport Order Data Stores.",
+      "requirements_list": [
+        {
+          "name": "Role-Based Access Control",
+          "description": "The system must control access to domain entities and data stores based on user identity, group membership, and assigned roles, ensuring only authorized personnel can access and update specific resources and data."
+        },
+        {
+          "name": "Warehouse Inventory Access Control",
+          "description": "The system must control access to the Warehouse Inventory based on the user identity, group membership, and assigned roles of Employees, such as Warehouse Manager and Workers."
+        },
+        {
+          "name": "Production Plan Data Store Access Control",
+          "description": "The system must control access to the Production Plan Data Store based on the user identity, group membership, and assigned roles of Employees, such as Plant Manager and Production Planners."
+        },
+        {
+          "name": "Finished Car Registry Access Control",
+          "description": "The system must control access to the Finished Car Registry based on the user identity, group membership, and assigned roles of Employees, such as Finished Car Yard Manager and Shipping Manager."
+        },
+        {
+          "name": "Requisitions Data Store Access Control",
+          "description": "The system must control access to the Requisitions Data Store based on the user identity, group membership, and assigned roles of Employees, such as Access Control Manager and Purchasing Manager."
+        },
+        {
+          "name": "Logistics Terminal Car Registry Access Control",
+          "description": "The system must control access to the Logistics Terminal Car Registry based on the user identity, group membership, and assigned roles of Employees, such as Shipping Manager and Logistics Coordinators."
+        },
+        {
+          "name": "Purchase Order and Transport Order Data Stores Access Control",
+          "description": "The system must control access to the Purchase Order and Transport Order Data Stores based on the user identity, group membership, and assigned roles of Employees, such as Shipping Manager and Purchasing Manager."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "The {organization} shall maintain a record of {all privileges allocated}.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement applies to the project. The project specification mentions various roles with different privileges, such as System Admin, Operations Manager, and Security Manager, and it is essential to maintain a record of all privileges allocated to these roles to ensure security and accountability.",
+      "project_entities_relation": "The cybersecurity requirement \"The {organization} shall maintain a record of {all privileges allocated}.\" may relate to the following entities or concepts in the project domain:\n\n- The \"{organization}\" could refer to the \"Car Manufacturer\" or the \"Factory\" as a whole, emphasizing the need for maintaining records of privileges allocated within the organization.\n\n- \"{all privileges allocated}\" could pertain to the access control and authorization privileges granted to different roles within the Factory, such as the Access Control Manager, Dock Manager, Warehouse Manager, Workers, and other Employees. This would ensure that there is a record of who has access to what resources or areas within the Factory, which is crucial for security and compliance purposes.\n\nIn essence, this requirement seems to focus on the aspect of access control and privilege management within the Factory's operations, which is a critical component of cybersecurity in the context of the AI4I4 project.",
+      "requirements_document": "**Privilege Allocation Record for Car Manufacturer**:\nThe Car Manufacturer must maintain a detailed record of all privileges allocated to various roles within the Factory. This includes access control and authorization privileges granted to the Access Control Manager, Dock Manager, Warehouse Manager, Workers, and other Employees, ensuring that there is a clear record of who has access to what resources or areas within the Factory.\n\n**Employee Access Privilege Registry**:\nThe Factory's security management system must include a registry to track and maintain records of all access privileges allocated to Employees, including specific areas of the Factory they are authorized to access, such as the Warehouse, Docks, and Assembly Lines. This registry should be regularly updated to reflect any changes in employee roles or access levels.\n\n**Role-Based Privilege Allocation Log**:\nThe Factory must implement a logging mechanism to record all allocations of privileges to different roles within the Factory. This log should include details such as the type of privilege allocated, the role or Employee to whom it was allocated, the date and time of allocation, and the reason for the allocation. This log will help in auditing and ensuring that privileges are allocated according to the Factory's security policies.",
+      "requirements_list": [
+        {
+          "name": "Comprehensive Privilege Allocation Record",
+          "description": "The Car Manufacturer must maintain a detailed record of all privileges allocated to various roles within the Factory, including access control and authorization privileges granted to specific roles and Employees."
+        },
+        {
+          "name": "Employee Access Privilege Registry",
+          "description": "The Factory's security management system must include a regularly updated registry to track and maintain records of all access privileges allocated to Employees, including specific areas of the Factory they are authorized to access."
+        },
+        {
+          "name": "Role-Based Privilege Allocation Log",
+          "description": "The Factory must implement a logging mechanism to record all allocations of privileges to different roles within the Factory, including details such as the type of privilege, recipient, date, time, and reason for allocation."
+        },
+        {
+          "name": "Access Control and Authorization",
+          "description": "The Factory must ensure that there is a clear record of who has access to what resources or areas within the Factory, maintaining access control and authorization."
+        },
+        {
+          "name": "Audit and Compliance",
+          "description": "The Factory's privilege allocation log must facilitate auditing to ensure that privileges are allocated according to the Factory's security policies."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "The {organization} shall regularly review {users} with privileged access rights to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement applies to the project because it involves multiple roles with varying levels of access and responsibility, such as System Admin, Operations Manager, and Security Manager, which necessitates regular review of their privileged access rights. This ensures that their duties, roles, responsibilities, and competence continue to justify their access levels, aligning with the project's emphasis on security management.",
+      "project_entities_relation": "The cybersecurity requirement relates to the following entities or concepts of the domain:\n\n- {organization}: This likely refers to the \"Factory\" or the \"Car Manufacturer\" as the primary organization responsible for ensuring the security of their systems and data.\n- {users}: This refers to the \"Employees\" within the Factory, specifically those who have been assigned privileged access rights to the system.\n- {duties}, {roles}, {responsibilities}: These terms are related to the various roles defined within the Factory, such as \"System admin\", \"Operations manager\", \"Security manager\", \"Warehouse Manager\", \"Plant Manager\", and other roles mentioned in the project specification. Each of these roles has specific duties, roles, and responsibilities that may require privileged access to certain parts of the system.\n- {competence}: This term refers to the skills, knowledge, and qualifications required for each role within the Factory, ensuring that employees are competent to perform their assigned duties, especially when it comes to handling privileged access.\n\nThe requirement emphasizes the need for regular review of users with privileged access rights to ensure that their access levels are still justified based on their current duties, roles, responsibilities, and competence. This is a critical aspect of maintaining the security and integrity of the system, as it helps prevent unauthorized access and potential security breaches.",
+      "requirements_document": "**Privileged Access Review for Car Manufacturer Employees**:\n\nThe Car Manufacturer must regularly review Employees with privileged access rights to the system, including System admins, Operations managers, and Security managers. This review should ensure that their current duties, roles, responsibilities, and competence still justify such access, considering changes in job functions, departmental shifts, or updates in the production process.\n\n**Role-Based Privileged Access Validation for Warehouse and Plant Managers**:\n\nThe Factory must validate the privileged access rights of Warehouse Managers and Plant Managers on a regular basis. This validation should focus on their specific duties, such as managing Warehouse operations, overseeing the Assembly Line, and coordinating logistics. The review should confirm that their access levels align with their current responsibilities and competence, ensuring that they can effectively perform their tasks without compromising system security.\n\n**Periodic Assessment of Privileged Access for Logistics and Shipping Personnel**:\n\nThe Car Manufacturer should conduct periodic assessments of privileged access rights for Employees involved in logistics and shipping, including Finished Car Yard Managers and Shipping Managers. This assessment should verify that their access levels are still justified based on their current roles, duties, and competence, taking into account changes in Purchase Orders, Transport Orders, or logistics procedures.",
+      "requirements_list": [
+        {
+          "name": "Privileged Access Review for Car Manufacturer Employees",
+          "description": "The Car Manufacturer must regularly review Employees with privileged access rights to the system, including System admins, Operations managers, and Security managers. This review should ensure that their current duties, roles, responsibilities, and competence still justify such access, considering changes in job functions, departmental shifts, or updates in the production process."
+        },
+        {
+          "name": "Role-Based Privileged Access Validation for Warehouse and Plant Managers",
+          "description": "The Factory must validate the privileged access rights of Warehouse Managers and Plant Managers on a regular basis. This validation should focus on their specific duties, such as managing Warehouse operations, overseeing the Assembly Line, and coordinating logistics. The review should confirm that their access levels align with their current responsibilities and competence, ensuring that they can effectively perform their tasks without compromising system security."
+        },
+        {
+          "name": "Periodic Assessment of Privileged Access for Logistics and Shipping Personnel",
+          "description": "The Car Manufacturer should conduct periodic assessments of privileged access rights for Employees involved in logistics and shipping, including Finished Car Yard Managers and Shipping Managers. This assessment should verify that their access levels are still justified based on their current roles, duties, and competence, taking into account changes in Purchase Orders, Transport Orders, or logistics procedures."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using firewalls.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement applies to the project because the system will rely on the use of IoT middleware platforms, sensors, and actuators, which will be connected to a network and require restricted and filtered connections to ensure security. Additionally, the system will implement security management procedures, and the Security Manager will oversee security procedures and events, indicating the need for network connection restrictions and filtering.",
+      "project_entities_relation": "The cybersecurity requirement \"Connection of systems to the network must be restricted and filtered, e.g., using firewalls\" is related to the following entities or concepts of the domain:\n\n- \"Systems\" may refer to various entities in the project specification that can connect to a network. These entities include sensors and actuators, IoT middleware platforms (e.g., Thingsboard), and the front-end application used by Factory Employees to interface with the Factory system.\n- \"Network\" refers to the communication infrastructure within the Factory that enables the exchange of data between different systems, including the Factory's IT infrastructure managed by the System Admin.\n\nThis requirement aims to ensure that connections between different systems and the network are secure and controlled, which is crucial for maintaining the overall cybersecurity of the Factory's systems and data. The requirement suggests using firewalls as an example of a security measure to restrict and filter these connections.",
+      "requirements_document": "**Restricted Connection to Factory Network**:\nThe connection of sensors, actuators, and the front-end application used by Factory Employees to the Factory's IT infrastructure network must be restricted and filtered, ensuring secure data exchange and controlled access within the Factory's communication infrastructure.\n\n**Secure IoT Middleware Connection**:\nThe connection of the IoT middleware platform (e.g., Thingsboard) to the Factory's network must be restricted and filtered, using measures such as firewalls to ensure the secure integration of sensors and actuators with the Factory system.\n\n**Filtered Front-end Application Access**:\nThe connection of the front-end application used by Factory Employees to the Factory system must be restricted and filtered, ensuring that only authorized access is allowed and data exchange between the application and the system is secure.",
+      "requirements_list": [
+        {
+          "name": "Restricted Connection to Factory Network",
+          "description": "The connection of sensors, actuators, and the front-end application used by Factory Employees to the Factory's IT infrastructure network must be restricted and filtered, ensuring secure data exchange and controlled access within the Factory's communication infrastructure."
+        },
+        {
+          "name": "Secure IoT Middleware Connection",
+          "description": "The connection of the IoT middleware platform (e.g., Thingsboard) to the Factory's network must be restricted and filtered, using measures such as firewalls to ensure the secure integration of sensors and actuators with the Factory system."
+        },
+        {
+          "name": "Filtered Front-end Application Access",
+          "description": "The connection of the front-end application used by Factory Employees to the Factory system must be restricted and filtered, ensuring that only authorized access is allowed and data exchange between the application and the system is secure."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "{Network administration channels} must be segregated from {other network traffic}.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement applies to the project because it involves the use of a networked system with various actors and roles, including system administrators, operations managers, and security managers, who will need to access and manage the system remotely, thus requiring network administration channels to be segregated from other network traffic to ensure security. This is particularly important in the context of Industry 4.0 and the Industrial Internet of Things, where cybersecurity is a major concern.",
+      "project_entities_relation": "The cybersecurity requirement relates to the Factory's IT infrastructure, specifically the network administration channels used by the System Admin and other Employee roles responsible for system operation and security management. The requirement aims to segregate these channels from other network traffic, such as the communication between sensors, actuators, and the IoT middleware platform, as well as the data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders. This segregation is likely intended to prevent unauthorized access, reduce the attack surface, and ensure the confidentiality, integrity, and availability of the Factory's system and data.",
+      "requirements_document": "**Segregation of Network Administration Channels**\nThe Factory's IT infrastructure must segregate network administration channels used by the System Admin and other Employee roles responsible for system operation and security management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders. This segregation is aimed at preventing unauthorized access, reducing the attack surface, and ensuring the confidentiality, integrity, and availability of the Factory's system and data.\n\n**Segregation of System Admin Channels**\nThe Factory's IT infrastructure must segregate network channels used by the System Admin for system management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders.\n\n**Segregation of Security Manager Channels**\nThe Factory's IT infrastructure must segregate network channels used by the Security Manager for security management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders.\n\n**Segregation of Operations Manager Channels**\nThe Factory's IT infrastructure must segregate network channels used by the Operations Manager for production process management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders.",
+      "requirements_list": [
+        {
+          "name": "Segregation of Network Administration Channels",
+          "description": "The Factory's IT infrastructure must segregate network administration channels used by the System Admin and other Employee roles responsible for system operation and security management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders."
+        },
+        {
+          "name": "Segregation of System Admin Channels",
+          "description": "The Factory's IT infrastructure must segregate network channels used by the System Admin for system management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders."
+        },
+        {
+          "name": "Segregation of Security Manager Channels",
+          "description": "The Factory's IT infrastructure must segregate network channels used by the Security Manager for security management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders."
+        },
+        {
+          "name": "Segregation of Operations Manager Channels",
+          "description": "The Factory's IT infrastructure must segregate network channels used by the Operations Manager for production process management from other network traffic, including communication between sensors, actuators, and the IoT middleware platform, as well as data exchange between the Factory's system and external entities like Providers, Dealers, and Forwarders."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "Implement cryptographic measures to safeguard {information stored} on {mobile user} {endpoint devices} or {storage media} and transmitted over {networks}.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement is applicable to the project. This is because the project involves the use of mobile devices (e.g., handheld devices used by Warehouse Workers and Yard Drivers), endpoint devices (e.g., front-end applications used by Factory Employees), and transmission of data over networks (e.g., updates to the Warehouse Inventory and Finished Car Registry), which necessitates the implementation of cryptographic measures to safeguard information.",
+      "project_entities_relation": "To determine which entities or concepts of the domain the cybersecurity requirement may relate to, let's analyze each part of the requirement:\n\n- {information stored}: This could relate to various types of data mentioned in the project specification, such as Requisitions, Delivery Notes, Purchase Orders, Waybills, or the information stored in the datastores (e.g., Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, Finished Car Registry).\n\n- {mobile user}: This could refer to Employees who use mobile devices to perform their tasks, such as Warehouse Workers, Yard Drivers, or Dock Managers.\n\n- {endpoint devices}: This could include the handheld devices used by Workers, the scanning devices used to register finished Cars, or the screens within the Finished Car Yard used by Yard Drivers.\n\n- {storage media}: This could refer to the physical or digital storage of data within the Factory, including the datastores mentioned earlier.\n\n- {networks}: This could refer to the communication networks used within the Factory, such as those connecting the IoT sensors and actuators, the communication between the Factory and the Logistics Terminal, or the networks used to transmit data between different departments and entities (e.g., between the Factory and the Forwarder).\n\nBased on this analysis, the cybersecurity requirement may relate to the following entities or concepts of the domain:\n\n- Datastores (e.g., Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, Finished Car Registry)\n- Mobile devices used by Employees (e.g., handheld devices, scanning devices)\n- Storage media used within the Factory (e.g., physical or digital storage of data)\n- Networks used within the Factory (e.g., communication networks, IoT sensor and actuator networks)\n- Employees who use mobile devices to perform their tasks (e.g., Warehouse Workers, Yard Drivers, Dock Managers)\n\nThe requirement aims to ensure the confidentiality, integrity, and authenticity of the data stored on mobile devices, endpoint devices, and storage media, as well as transmitted over networks, by implementing cryptographic measures.",
+      "requirements_document": "Here are the non-functional requirements:\n\n**Cryptographic Protection of Handheld Device Data**\nThe system must implement cryptographic measures to safeguard data stored on handheld devices used by Warehouse Workers, Yard Drivers, and Dock Managers, ensuring the confidentiality, integrity, and authenticity of information such as Requisitions, Delivery Notes, and Purchase Orders.\n\n**Secure Data Transmission over Factory Networks**\nThe system must implement cryptographic measures to protect data transmitted over networks within the Factory, including communication between IoT sensors and actuators, and data exchange between departments and entities, such as between the Factory and the Forwarder, or between the Factory and the Logistics Terminal.\n\n**Encryption of Data in Factory Datastores**\nThe system must implement cryptographic measures to safeguard data stored in Factory datastores, including the Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, and Finished Car Registry, ensuring the confidentiality, integrity, and authenticity of the stored information.\n\n**Cryptographic Protection of Finished Car Registry Data**\nThe system must implement cryptographic measures to safeguard data stored in the Finished Car Registry, including information about finished Cars, ensuring the confidentiality, integrity, and authenticity of the data.\n\n**Secure Data Storage on Endpoint Devices**\nThe system must implement cryptographic measures to protect data stored on endpoint devices used in the Factory, including scanning devices and screens within the Finished Car Yard, ensuring the confidentiality, integrity, and authenticity of the stored information.",
+      "requirements_list": [
+        {
+          "name": "Cryptographic Protection of Handheld Device Data",
+          "description": "The system must implement cryptographic measures to safeguard data stored on handheld devices used by Warehouse Workers, Yard Drivers, and Dock Managers, ensuring the confidentiality, integrity, and authenticity of information such as Requisitions, Delivery Notes, and Purchase Orders."
+        },
+        {
+          "name": "Secure Data Transmission over Factory Networks",
+          "description": "The system must implement cryptographic measures to protect data transmitted over networks within the Factory, including communication between IoT sensors and actuators, and data exchange between departments and entities, such as between the Factory and the Forwarder, or between the Factory and the Logistics Terminal."
+        },
+        {
+          "name": "Encryption of Data in Factory Datastores",
+          "description": "The system must implement cryptographic measures to safeguard data stored in Factory datastores, including the Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, and Finished Car Registry, ensuring the confidentiality, integrity, and authenticity of the stored information."
+        },
+        {
+          "name": "Cryptographic Protection of Finished Car Registry Data",
+          "description": "The system must implement cryptographic measures to safeguard data stored in the Finished Car Registry, including information about finished Cars, ensuring the confidentiality, integrity, and authenticity of the data."
+        },
+        {
+          "name": "Secure Data Storage on Endpoint Devices",
+          "description": "The system must implement cryptographic measures to protect data stored on endpoint devices used in the Factory, including scanning devices and screens within the Finished Car Yard, ensuring the confidentiality, integrity, and authenticity of the stored information."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "Establish a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys}.",
+    "adapted_nfr": {
+      "applicability_reason": "The requirement is applicable. The project involves the use of various data stores, such as Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, and Finished Car Registry, which likely contain sensitive information that needs to be encrypted, thus necessitating a comprehensive key management system to protect and manage cryptographic keys.",
+      "project_entities_relation": "The cybersecurity requirement for establishing a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys}, relates to the following entities or concepts of the domain:\n\n- Factory: This is the primary location where the key management system will be implemented to protect data related to car manufacturing, including sensitive information about components, production plans, and finished cars.\n- System Admin: This role is responsible for dealing with the physical and logical IT infrastructure of the factory, ensuring that all employees can perform their duties securely. The System Admin will likely be involved in implementing and managing the key management system.\n- Security Manager: This role implements and oversees security procedures and events, taking the necessary measures to handle them in a timely manner. The Security Manager will be responsible for ensuring that the key management system is secure and compliant with relevant regulations.\n- Production Plan Data Store, Warehouse Inventory, Finished Car Registry, Requisitions Data Store, Supply Vehicles Registry, Purchase Order and Transport Order Data Stores: These data stores contain sensitive information that needs to be protected with cryptographic keys. The key management system will ensure that these keys are generated, protected, and recovered in case of loss or compromise.\n\nThe requirement is applicable to the project as it aims to ensure the confidentiality, integrity, and availability of sensitive data in the factory's systems.",
+      "requirements_document": "**Comprehensive Key Management System for Factory Data Protection**\n\nThe AI4I4 system must implement a comprehensive key management system specifically designed to protect sensitive data related to car manufacturing, including Production Plan Data Store, Warehouse Inventory, Finished Car Registry, Requisitions Data Store, Supply Vehicles Registry, Purchase Order, and Transport Order Data Stores. This system must include procedures for generating and protecting cryptographic keys used to encrypt this data and recovering encrypted data in case of lost, compromised, or damaged keys. The key management system should be integrated with the factory's IT infrastructure and overseen by the Security Manager, with the System Admin responsible for its implementation and management.\n\n**Secure Key Generation and Protection for Sensitive Factory Data**\n\nThe system must ensure that cryptographic keys used to protect sensitive factory data are generated securely and protected against unauthorized access. This includes keys used to encrypt Production Plans, Warehouse Inventory, Finished Car Registry, Requisitions, Supply Vehicles Registry, Purchase Orders, and Transport Orders. The key generation process must be compliant with relevant security standards and overseen by the Security Manager.\n\n**Encrypted Data Recovery for Factory Systems**\n\nIn the event of lost, compromised, or damaged cryptographic keys, the system must have procedures in place to recover encrypted data related to car manufacturing. This includes data stored in the Production Plan Data Store, Warehouse Inventory, Finished Car Registry, Requisitions Data Store, Supply Vehicles Registry, Purchase Order, and Transport Order Data Stores. The encrypted data recovery process must be secure, reliable, and overseen by the Security Manager, with minimal disruption to factory operations.",
+      "requirements_list": [
+        {
+          "name": "Comprehensive Key Management System",
+          "description": "The system must implement a comprehensive key management system specifically designed to protect sensitive data related to car manufacturing, including Production Plan Data Store, Warehouse Inventory, Finished Car Registry, Requisitions Data Store, Supply Vehicles Registry, Purchase Order, and Transport Order Data Stores."
+        },
+        {
+          "name": "Secure Key Generation and Protection",
+          "description": "The system must ensure that cryptographic keys used to protect sensitive factory data are generated securely and protected against unauthorized access, in compliance with relevant security standards and overseen by the Security Manager."
+        },
+        {
+          "name": "Encrypted Data Recovery",
+          "description": "The system must have procedures in place to recover encrypted data related to car manufacturing in the event of lost, compromised, or damaged cryptographic keys, ensuring a secure, reliable, and minimal disruption to factory operations."
+        },
+        {
+          "name": "Key Management System Integration",
+          "description": "The key management system must be integrated with the factory's IT infrastructure, with the System Admin responsible for its implementation and management, and overseen by the Security Manager."
+        }
+      ]
+    }
+  }
+]

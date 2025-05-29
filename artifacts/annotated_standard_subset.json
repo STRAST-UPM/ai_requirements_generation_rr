@@ -1,0 +1,37 @@
+[
+  {
+    "norm": "ISO 27002 8.5",
+    "nfrs": [
+      "Help messages during the {log-on procedure} must not aid an unauthorized user, e.g., by indicating which {parts of the data} are correct or incorrect.",
+      "A security event must be raised if a potential attempted or successful breach of {log-on controls} is detected, e.g., sending an alert to the {user} and the {organization's system administrators} when a certain number of wrong password attempts has been reached."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.3",
+    "nfrs": [
+      "Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.",
+      "{Access to data} must be controlled based on {user identity, group membership, and assigned roles}."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.2",
+    "nfrs": [
+      "The {organization} shall maintain a record of {all privileges allocated}.",
+      "The {organization} shall regularly review {users} with privileged access rights to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.20",
+    "nfrs": [
+      "{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using firewalls.",
+      "{Network administration channels} must be segregated from {other network traffic}."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.24",
+    "nfrs": [
+      "Implement cryptographic measures to safeguard {information stored} on {mobile user} {endpoint devices} or {storage media} and transmitted over {networks}.",
+      "Establish a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys}."
+    ]
+  }
+]

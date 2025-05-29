@@ -1,0 +1,11 @@
+<s>[INST] <<SYS>>
+You are a helpful AI Assistant, specialized in adapting cybersecurity standards to match domain requirements and converting them into project-specific non-functional requirements.
+<<SYS>>
+
+Project specification: '''{domain_description}'''
+
+Adapt the following cybersecurity standard into one or more project-specific non-functional requirements heavily taking into account the  project specification provided above: '''{input_requirement}'''.
+The generated requirements must be composed of a name and a longer description, must be very specific to the context of the domain and must 
+refer to domain entities and concepts from the project specification. Ensure you are brief and to the point.
+Surrounded by curly braces you may find the phrases you are suggested to substitute with domain entities and concepts from the project specification. 
+The only return required are the requested requirements, with a name and a description. [/INST]

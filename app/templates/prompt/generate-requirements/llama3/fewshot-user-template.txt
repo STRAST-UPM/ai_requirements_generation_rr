@@ -1,0 +1,45 @@
+Project specification:
+'''
+The integrated software ecosystem encompassing WebTFT and SmartCampus represents a dual-faceted approach to digital transformation in higher education. On one side, WebTFT digitizes and streamlines the complex academic and administrative workflows associated with final degree projects (TFTs). On the other, SmartCampus brings the power of IoT to manage and enhance campus operations and the physical environment. Together, they offer a holistic vision of a smart, efficient, and student-centered academic institution.
+**WebTFT System Overview**
+WebTFT addresses the full lifecycle of the TFT (Final Thesis/Final Degree Project) process, a mandatory academic requirement for most undergraduate and master's programs. This process involves multiple stakeholders—students, tutors, academic committees, and administrative personnel—each playing specific roles across several defined stages. The system ensures transparency, traceability, and regulatory compliance, enabling universities to handle the high volume and complexity of TFT submissions and evaluations.
+The TFT lifecycle begins with eligibility verification, where students must meet academic prerequisites before initiating a thesis. WebTFT verifies enrollment and ensures alignment with institutional requirements. Once eligible, students can either propose their own thesis ideas or select from available offers published by professors through the platform. This helps facilitate meaningful academic matches between students and faculty mentors.
+Following topic selection, the system enables structured proposal submission. This includes registration of the thesis topic, provision of key details like objectives and title, and nomination of a supervising professor. WebTFT then supports a layered validation process involving tutor confirmation and committee authorization—automating what would otherwise be a time-consuming manual review.
+While the actual development of the TFT happens outside the system, WebTFT re-engages at the submission phase. Here, students upload their final reports in PDF format and request to be scheduled for examination. This request again passes through a validation workflow, involving tutor approval and academic committee clearance, ensuring quality control and policy adherence.
+The examination process is deeply integrated into WebTFT. The system supports tribunal assignment, based on departmental responsibility, and captures the oral defense and assessment outcomes. Tribunal members—comprising four professors—evaluate the work and log their decisions into the system. Finalization of grades occurs after another round of validation by the academic organization committee, ensuring all prerequisites and financial conditions are met.
+The domain model behind WebTFT is both intuitive and robust. It centers on core entities such as Student, Thesis, Professor, and Tribunal. These entities reflect real-world roles and relationships—students are linked to a single thesis and a tutor, professors can supervise and evaluate multiple theses, and tribunals are uniquely assigned to ensure fair and focused evaluations.
+**SmartCampus System Overview**
+Parallel to WebTFT, SmartCampus offers a complementary layer of campus intelligence using IoT technology. Focused on the operational and environmental dimensions of campus life, this system creates a smart infrastructure for managing energy, security, assets, and environmental quality. SmartCampus transforms the physical campus into a data-driven, responsive environment.
+The system starts with the deployment of IoT devices and sensors across key facilities—classrooms, labs, and common areas. These devices collect real-time data on temperature, humidity, air quality, energy usage, room occupancy, and asset location. The collected data is funneled into centralized data managers, which process and store information for visualization, analysis, and control.
+Automation is at the heart of SmartCampus. Using data collected from IoT devices, the system activates ControlSystems that automatically regulate lighting, HVAC systems, and other energy-consuming utilities. For instance, it can turn off lights and adjust air conditioning in unoccupied rooms, significantly reducing waste and operating costs.
+Security is another major component. Through surveillance cameras, motion detectors, and access control devices, the SecurityModule provides real-time alerts and surveillance data to campus security teams. These tools improve both preventive and responsive capabilities in the face of unauthorized access or environmental hazards like gas leaks or fires.
+SmartCampus also supports asset management through RFID devices and asset-location sensors. These ensure that valuable equipment is not only tracked in real-time but also optimally deployed based on usage patterns derived from analytics.
+The SmartCampus domain model is well-structured, encompassing entities such as IoTSensor, Device, ControlSystem, DataManager, SecurityModule, and CampusFacility. Each component serves a distinct but interrelated role, contributing to a holistic model of campus digitization. Sensors and devices gather data; control systems respond autonomously; data managers orchestrate the flow and analysis of information; and security modules enforce physical safety measures.
+**Interoperability and Strategic Impact**
+Though WebTFT and SmartCampus serve different domains—academic process vs. physical infrastructure—they represent a complementary strategy for holistic campus management. One focuses on optimizing intellectual and administrative resources, while the other ensures physical and operational efficiency. Together, they illustrate how modern educational institutions can combine academic rigor with environmental responsiveness and operational intelligence.
+Both systems also underscore the importance of data integrity, role-based access control, and regulatory compliance. WebTFT maintains academic records, manages user roles across departments, and adheres to institutional guidelines. SmartCampus, on the other hand, must ensure data privacy, especially in security modules, and comply with environmental and safety standards.
+'''
+
+Heavily taking into account the project specification provided above, adapt the following cybersecurity standard into one or more project-specific non-functional requirements: '''Establish a comprehensive key management system, including procedures for generating and protecting cryptographic keys and recovering encrypted data in case of lost, compromised, or damaged keys. {{key management, keys, cryptographic keys, data}}'''
+
+<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+**Comprehensive Key Management System**:
+The WebTFT system must implement a comprehensive key management system to ensure the secure handling of cryptographic keys used to protect sensitive academic data such as student records, thesis reports, and grades. This includes the generation, distribution, storage, usage, and destruction of keys in a controlled and secure manner. Keys should be created using strong cryptographic algorithms, stored in protected environments, and rotated periodically to minimize the risk of compromise.
+The system must also support procedures for key recovery in case keys are lost, damaged, or compromised, ensuring continued access to encrypted data. Access to key management functions should be restricted based on user roles, and all key-related operations must be logged and auditable. This requirement is essential for maintaining data confidentiality and integrity, especially given WebTFT’s integration with other university systems and its role in handling regulated academic information.
+
+<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Project specification: '''{domain_description}'''
+
+Heavily taking into account the project specification provided above, adapt the following cybersecurity standard into one or more project-specific non-functional requirements: '''{input_requirement}'''.
+Surrounded by curly braces you may find the phrases you are suggested to substitute with domain entities and concepts from the project specification.
+You can also take into account the following analysis on how the requirement relates to the project entities or concepts: '''{project_entities_relation}'''.
+
+The generated non-functional requirements must be **highly specific** to the project specification. They must not be generic, nor should they assume any technology, implementation, or information not explicitly mentioned in the project specification. Ensure you are brief and to the point.
+
+Each non-functional requirement should include:
+- **A name**, representing the key objective or feature.
+- **A description**, which is specific to the project domain, incorporating relevant project entities and concepts.
+
+The only return required is the requested non-functional requirements.

@@ -1,0 +1,12 @@
+Project specification: '''{domain_description}'''
+
+Heavily taking into account the project specification provided above, adapt the following cybersecurity standard into one or more project-specific non-functional requirements: '''{input_requirement}'''.
+You can also take into account the following analysis on how the requirement relates to the project entities or concepts: '''{project_entities_relation}'''.
+
+The generated non-functional requirements must be **highly specific** to the project specification. They must not be generic, nor should they assume any technology, implementation, or information not explicitly mentioned in the project specification. Ensure you are brief and to the point.
+
+Each non-functional requirement should include:
+- **A name**, representing the key objective or feature.
+- **A description**, which is specific to the project domain, incorporating relevant project entities and concepts.
+
+Substitute any placeholders in curly braces with relevant domain entities and concepts from the project specification where applicable. The only return required is the requested non-functional requirements.

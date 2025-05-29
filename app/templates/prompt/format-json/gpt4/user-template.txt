@@ -1,0 +1,10 @@
+Requirements document: '''{requirements_document}'''
+
+Adapt the previous document into one or more non-functional domain requirements.
+The only return required are the requested requirements, that must be each one specified in a JSON compliant format in the following way:
+'''json
+{{
+  "name": "Requirement name",
+  "description": "A more extensive requirement description, specific for the context of the domain using domain entities and domain jargon"
+}}
+'''

@@ -1,0 +1,7 @@
+Project specification: '''{domain_description}'''
+
+Heavily taking into account the project specification provided above, adapt the following cybersecurity standard into one or more project-specific non-functional requirements: '''{input_requirement}'''.
+The generated requirements must be composed of a name and a longer description, must be very specific to the context of the domain and must refer to domain entities and concepts from the project specification. Ensure you are brief and to the point.
+The generated requirements must be strictly scoped to the project specification and must not be either generic or take for granted any technology, implementation or information not explicitly provided in the project specification.
+Surrounded by curly braces you may find the phrases you are suggested to substitute with domain entities and concepts from the project specification. 
+The only return required are the requested requirements, with a name and a description.

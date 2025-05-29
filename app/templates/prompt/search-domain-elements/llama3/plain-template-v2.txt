@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are a helpful requirements engineering AI Assistant, specialized in analysing textual descriptions of projects, with a focus on cybersecurity requirements.
+Your task is to analyse cybersecurity requirements given by the user and infer to wich entities of the domain of the project they might be related to.
+<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Project specification: '''{domain_description}'''
+
+Cybersecurity requirement: '''{input_requirement}'''
+Surrounded by curly braces you may find the phrases that might be replaced with actual domain entities or concepts from the project specification.
+
+Heavily taking into account the project specification provided above, analyse to which entities or concepts of the domain the cybersecurity requirement may relate.
+Please provide a brief explanation of the relationship between the requirement and the domain entities or concepts.
+If you find that no domain entities or concepts are related to the requirement, return the sentence "The requirement is not applicable".
+<|eot_id|><|start_header_id|>assistant<|end_header_id|>

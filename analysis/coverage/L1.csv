@@ -1,0 +1,39 @@
+L1.#,Present,Hallucination,Rationale
+L1.1.1,Yes,,
+L1.1.2,Yes,,
+L1.1.3,No,Yes,Outside of the scope of the system
+L1.2.1,No,Yes,Outside of the scope of the system
+L1.2.2,Yes,,
+L1.3.1,Yes,,
+L1.3.2,Yes,Yes,Partial hall. also areas non-related to IT
+L1.3.3,No,No,
+L1.3.4,No,Yes,
+L1.3.5,Yes,,
+L1.4.1,Yes,,
+L1.4.2,No,No,
+L1.4.3,No,No,
+L1.5.1,Yes,,
+L1.5.2,Yes,,Essentially the same as L1.5.1
+L1.5.3,No,No,
+L1.5.4,Yes,,Essentially the same as L1.5.1
+L1.6.1,Yes,,
+L1.6.2,Yes,,
+L1.6.3,Yes,,
+L1.6.4,Partial,No,
+L1.6.5,Partial,No,
+L1.7.1,Yes,,
+L1.7.2,Partial,No,Securize internals
+L1.7.3,Yes,,
+L1.7.4,Yes,,
+L1.7.5,No,No,
+L1.8.1,Yes,,
+L1.8.2,Yes,,
+L1.9.1,Yes,,
+L1.9.2,Yes,,
+L1.9.3,Yes,,
+L1.9.4,Yes,,
+L1.9.5,Yes,,
+L1.9.6,Yes,,
+L1.10.1,Yes,,
+L1.10.2,No,Yes,
+L1.10.3,Yes,,

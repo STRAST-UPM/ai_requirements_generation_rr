@@ -1,0 +1,5 @@
+Project specification: '''{domain_description}'''
+
+Heavily taking into account the project specification provided above, analyse the applicability of the following cybersecurity requirement to the context of the project: '''{input_requirement}'''.
+If the requirement is applicable to the project, return the reason why it is applicable. If it is not applicable, return the sentence "The requirement is not applicable".
+Please be brief and to the point.

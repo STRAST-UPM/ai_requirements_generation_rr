@@ -1,0 +1,5 @@
+Project specification: '''{domain_description}'''
+
+Cybersecurity requirement to analyze: '''{input_requirement}'''
+
+Considering the project specification, indicate whether the requirement applies to the project. Provide a reason if it does or state, 'The requirement is not applicable' if it doesn’t. Limit the response to 1-2 sentences.

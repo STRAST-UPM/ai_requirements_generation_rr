@@ -1,0 +1,222 @@
+[
+  {
+    "nfr": "Help messages during the {log-on procedure} must not aid an unauthorized user, e.g., by indicating which {parts of the data} are correct or incorrect.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements adapted from the provided cybersecurity standard:\n\n**1. Secure Access Control Feedback**\nHelp messages during the Access Control Manager's verification of Delivery Notes and Supply Vehicle identification at the Access Gate must not aid an unauthorized user, e.g., by indicating which parts of the Delivery Note or Supply Vehicle identification are correct or incorrect.\n\n**2. Secure Login Feedback for System Users**\nHelp messages during the log-on procedure for system users, including Warehouse Managers, Dock Managers, and Shipping Managers, must not aid an unauthorized user, e.g., by indicating which parts of the username or password are correct or incorrect.\n\n**3. Secure Authentication Feedback for Finished Car Yard Drivers**\nHelp messages during the authentication procedure for Finished Car Yard Drivers accessing the Finished Car Registry must not aid an unauthorized user, e.g., by indicating which parts of the driver's identification or credentials are correct or incorrect.",
+      "requirements_list": [
+        {
+          "name": "Secure Access Control Feedback",
+          "description": "Help messages during the Access Control Manager's verification of Delivery Notes and Supply Vehicle identification at the Access Gate must not aid an unauthorized user, e.g., by indicating which parts of the Delivery Note or Supply Vehicle identification are correct or incorrect."
+        },
+        {
+          "name": "Secure Login Feedback for System Users",
+          "description": "Help messages during the log-on procedure for system users, including Warehouse Managers, Dock Managers, and Shipping Managers, must not aid an unauthorized user, e.g., by indicating which parts of the username or password are correct or incorrect."
+        },
+        {
+          "name": "Secure Authentication Feedback for Finished Car Yard Drivers",
+          "description": "Help messages during the authentication procedure for Finished Car Yard Drivers accessing the Finished Car Registry must not aid an unauthorized user, e.g., by indicating which parts of the driver's identification or credentials are correct or incorrect."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "A security event must be raised if a potential attempted or successful breach of {log-on controls} is detected, e.g., sending an alert to the {user} and the {organization's system administrators} when a certain number of wrong password attempts has been reached.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements adapted from the provided cybersecurity standard:\n\n**1. Intrusion Detection and Alert in Supply Vehicle Access Control**\n\nThe system must raise a security event and send an alert to the Access Control Manager and the Factory's System Admin if a potential attempted or successful breach of access control is detected, e.g., when a certain number of wrong license plate readings or unauthorized Delivery Notes is reached.\n\n**2. Anomalous Login Attempt Detection and Notification for Warehouse Workers**\n\nThe system must detect and report anomalous login attempts by Warehouse Workers and notify the Warehouse Manager and the Security Manager when a predefined number of incorrect login attempts has been made, indicating a potential security breach.\n\n**3. Real-time Monitoring and Alert System for Car Assembly Line**\n\nThe system must continuously monitor the Car assembly process and raise a security event if an unauthorized access or anomaly is detected, sending an alert to the Plant Manager and the Security Manager to ensure prompt action and minimize potential security breaches.\n\n**4. Automated Alert System for Suspicious Activity in Finished Car Yard**\n\nThe system must automatically detect and report suspicious activity in the Finished Car Yard, such as unauthorized Car movements or access attempts, and send an alert to the Finished Car Yard Manager and the Security Manager to ensure prompt investigation and response.\n\n**5. Detection and Notification of Potential Security Breaches in Logistics Terminal**\n\nThe system must detect potential security breaches in the Logistics Terminal, such as unauthorized access or anomalies in Car shipments, and notify the Shipping Manager and the Security Manager to ensure prompt action and minimize potential security risks.",
+      "requirements_list": [
+        {
+          "name": "Intrusion Detection and Alert",
+          "description": "The system must raise a security event and send an alert to the Access Control Manager and the Factory's System Admin if a potential attempted or successful breach of access control is detected, e.g., when a certain number of wrong license plate readings or unauthorized Delivery Notes is reached."
+        },
+        {
+          "name": "Anomalous Login Attempt Detection and Notification",
+          "description": "The system must detect and report anomalous login attempts by Warehouse Workers and notify the Warehouse Manager and the Security Manager when a predefined number of incorrect login attempts has been made, indicating a potential security breach."
+        },
+        {
+          "name": "Real-time Monitoring and Alert System",
+          "description": "The system must continuously monitor the Car assembly process and raise a security event if an unauthorized access or anomaly is detected, sending an alert to the Plant Manager and the Security Manager to ensure prompt action and minimize potential security breaches."
+        },
+        {
+          "name": "Automated Alert System for Suspicious Activity",
+          "description": "The system must automatically detect and report suspicious activity in the Finished Car Yard, such as unauthorized Car movements or access attempts, and send an alert to the Finished Car Yard Manager and the Security Manager to ensure prompt investigation and response."
+        },
+        {
+          "name": "Detection and Notification of Potential Security Breaches",
+          "description": "The system must detect potential security breaches in the Logistics Terminal, such as unauthorized access or anomalies in Car shipments, and notify the Shipping Manager and the Security Manager to ensure prompt action and minimize potential security risks."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "Physical or logical access controls must be implemented to isolate {sensitive applications, data, or systems}.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements adapted from the cybersecurity standard:\n\n**1. Access Control for Supply Vehicles**\n\nPhysical or logical access controls must be implemented to isolate the Factory's inbound logistic area, ensuring that only authorized Supply Vehicles can enter the facility and preventing unauthorized access to Components and the Warehouse.\n\n**2. Segregation of Duties for Warehouse Workers**\n\nPhysical or logical access controls must be implemented to isolate Warehouse Workers' access to specific areas of the Warehouse, ensuring that they can only perform tasks related to their assigned duties and preventing unauthorized access to sensitive Components or data.\n\n**3. Controlled Access to Assembly Line**\n\nPhysical or logical access controls must be implemented to isolate the Assembly Line, ensuring that only authorized Workers and AGVs can access the area and preventing unauthorized access to sensitive Components, data, or systems.\n\n**4. Secure Storage of Finished Cars**\n\nPhysical or logical access controls must be implemented to isolate the Finished Car Yard, ensuring that only authorized Yard Drivers and Employees can access the area and preventing unauthorized access to finished Cars or sensitive data.\n\n**5. Restricted Access to Logistics Terminal**\n\nPhysical or logical access controls must be implemented to isolate the Logistics Terminal, ensuring that only authorized Shipping Managers, Yard Drivers, and Forwarders can access the area and preventing unauthorized access to sensitive data or systems related to Transport Orders and shipping.\n\nThese requirements are specific to the context of the domain, refer to domain entities and concepts from the project specification, and are strictly scoped to the project specification.",
+      "requirements_list": [
+        {
+          "name": "Authorized Supply Vehicle Access",
+          "description": "Physical or logical access controls must be implemented to isolate the Factory's inbound logistic area, ensuring that only authorized Supply Vehicles can enter the facility and preventing unauthorized access to Components and the Warehouse."
+        },
+        {
+          "name": "Segregation of Duties for Warehouse Workers",
+          "description": "Physical or logical access controls must be implemented to isolate Warehouse Workers' access to specific areas of the Warehouse, ensuring that they can only perform tasks related to their assigned duties and preventing unauthorized access to sensitive Components or data."
+        },
+        {
+          "name": "Controlled Access to Assembly Line",
+          "description": "Physical or logical access controls must be implemented to isolate the Assembly Line, ensuring that only authorized Workers and AGVs can access the area and preventing unauthorized access to sensitive Components, data, or systems."
+        },
+        {
+          "name": "Secure Storage of Finished Cars",
+          "description": "Physical or logical access controls must be implemented to isolate the Finished Car Yard, ensuring that only authorized Yard Drivers and Employees can access the area and preventing unauthorized access to finished Cars or sensitive data."
+        },
+        {
+          "name": "Restricted Access to Logistics Terminal",
+          "description": "Physical or logical access controls must be implemented to isolate the Logistics Terminal, ensuring that only authorized Shipping Managers, Yard Drivers, and Forwarders can access the area and preventing unauthorized access to sensitive data or systems related to Transport Orders and shipping."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "{Access to data} must be controlled based on {user identity, group membership, and assigned roles}.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements:\n\n**1. Role-Based Access Control for Inbound Logistics Data**\n\nThe system must control access to inbound logistics data, including Requisitions, Delivery Notes, and Supply Vehicle information, based on the user's identity, group membership, and assigned roles (e.g., Access Control Manager, Dock Manager, Warehouse Worker).\n\n**2. Role-Based Access Control for Warehouse Inventory Management**\n\nThe system must control access to Warehouse Inventory data, including Component storage locations and stock levels, based on the user's identity, group membership, and assigned roles (e.g., Warehouse Manager, Warehouse Worker).\n\n**3. Role-Based Access Control for Assembly Line Data**\n\nThe system must control access to Assembly Line data, including Production Plans, Component usage, and finished Car information, based on the user's identity, group membership, and assigned roles (e.g., Plant Manager, Assembly Line Worker).\n\n**4. Role-Based Access Control for Outbound Logistics Data**\n\nThe system must control access to outbound logistics data, including Finished Car Registry, Purchase Orders, and Transport Orders, based on the user's identity, group membership, and assigned roles (e.g., Finished Car Yard Manager, Shipping Manager).\n\n**5. Role-Based Access Control for System Administration**\n\nThe system must control access to system administration functions, including user management, system operation, and security management, based on the user's identity, group membership, and assigned roles (e.g., System Admin, Operations Manager, Security Manager).",
+      "requirements_list": [
+        {
+          "name": "Role-Based Access Control for Logistics and Production Data",
+          "description": "The system must control access to inbound logistics, warehouse inventory, assembly line, and outbound logistics data based on the user's identity, group membership, and assigned roles."
+        },
+        {
+          "name": "Role-Based Access Control for System Administration",
+          "description": "The system must control access to system administration functions, including user management, system operation, and security management, based on the user's identity, group membership, and assigned roles."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "The {organization} shall maintain a record of {all privileges allocated}.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements:\n\n**1. \"Record of Access Privileges for Supply Vehicles\"**\n\nThe system shall maintain a record of all privileges allocated to Supply Vehicles for accessing the Factory premises, including the assigned Dock and the specific Components to be unloaded.\n\n**2. \"Record of Component Access Privileges for Warehouse Workers\"**\n\nThe system shall maintain a record of all privileges allocated to Warehouse Workers for accessing specific Components in the Warehouse, including the ability to retrieve and move Components to the Assembly Line.\n\n**3. \"Record of User Privileges for System Access\"**\n\nThe system shall maintain a record of all privileges allocated to Employees, including System Admins, Operations Managers, and Security Managers, for accessing and managing the system, including user management, system operation, and security management.\n\n**4. \"Record of Shipping Privileges for Finished Cars\"**\n\nThe system shall maintain a record of all privileges allocated to Shipping Managers and Yard Drivers for accessing and shipping finished Cars from the Finished Car Yard to the Logistics Terminal and ultimately to Dealers.",
+      "requirements_list": [
+        {
+          "name": "Audit Trail of Access Privileges",
+          "description": "The system shall maintain an audit trail of all privileges allocated to entities, including Supply Vehicles, Warehouse Workers, Employees, Shipping Managers, and Yard Drivers, for accessing and managing the system, Factory premises, Warehouse, and Finished Car Yard."
+        },
+        {
+          "name": "Access Control for Supply Vehicles",
+          "description": "The system shall maintain a record of all privileges allocated to Supply Vehicles for accessing the Factory premises, including the assigned Dock and the specific Components to be unloaded."
+        },
+        {
+          "name": "Access Control for Warehouse Workers",
+          "description": "The system shall maintain a record of all privileges allocated to Warehouse Workers for accessing specific Components in the Warehouse, including the ability to retrieve and move Components to the Assembly Line."
+        },
+        {
+          "name": "Access Control for Employees",
+          "description": "The system shall maintain a record of all privileges allocated to Employees, including System Admins, Operations Managers, and Security Managers, for accessing and managing the system, including user management, system operation, and security management."
+        },
+        {
+          "name": "Access Control for Shipping Finished Cars",
+          "description": "The system shall maintain a record of all privileges allocated to Shipping Managers and Yard Drivers for accessing and shipping finished Cars from the Finished Car Yard to the Logistics Terminal and ultimately to Dealers."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "The {organization} shall regularly review {users} with privileged access rights to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access.",
+    "adapted_nfr": {
+      "requirements_document": "**Requirement 1: Regular Review of Privileged Access Rights for System Admin**\n\nThe AI4I4 system shall regularly review System Admins with privileged access rights to ensure that their duties, roles, responsibilities, and competence still justify such access to the physical and logical IT infrastructure of the Factory.\n\n**Requirement 2: Regular Review of Privileged Access Rights for Operations Manager**\n\nThe AI4I4 system shall regularly review Operations Managers with privileged access rights to ensure that their duties, roles, responsibilities, and competence still justify such access to the production process, including recurring tasks, optimizing inefficiencies, and coordinating machinery like AGVs and robots.\n\n**Requirement 3: Regular Review of Privileged Access Rights for Security Manager**\n\nThe AI4I4 system shall regularly review Security Managers with privileged access rights to ensure that their duties, roles, responsibilities, and competence still justify such access to implement and oversee security procedures and events, taking the necessary measures to handle them in a timely manner.",
+      "requirements_list": [
+        {
+          "name": "Regular Review of Privileged Access Rights",
+          "description": "The AI4I4 system shall regularly review privileged access rights for System Admins, Operations Managers, and Security Managers to ensure that their duties, roles, responsibilities, and competence still justify such access to the physical and logical IT infrastructure of the Factory, production process, and security procedures."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using firewalls.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the adapted non-functional requirements:\n\n**1. \"Restrict and Filter Supply Vehicle Access to the Factory Network\"**\n\nConnection of Supply Vehicles' systems to the Factory network must be restricted and filtered, e.g., using firewalls, to prevent unauthorized access and ensure that only authorized Supply Vehicles can enter the Factory premises.\n\n**2. \"Secure Connection of AGVs and Robots to the Assembly Line Network\"**\n\nConnection of AGVs and Robots' systems to the Assembly Line network must be restricted and filtered, e.g., using firewalls, to prevent unauthorized access and ensure that only authorized AGVs and Robots can operate on the Assembly Line.\n\n**3. \"Filter and Restrict IoT Middleware Platform Connections\"**\n\nConnection of IoT middleware platforms (e.g. Thingsboard) to the Factory network must be restricted and filtered, e.g., using firewalls, to prevent unauthorized access and ensure that only authorized sensors and actuators can connect to the platform.\n\n**4. \"Secure Connection of Logistics Terminal Systems to the Factory Network\"**\n\nConnection of Logistics Terminal systems to the Factory network must be restricted and filtered, e.g., using firewalls, to prevent unauthorized access and ensure that only authorized Logistics Terminal personnel can access the Factory network.\n\n**5. \"Restrict and Filter Employee Access to the System\"**\n\nConnection of Employee devices to the system must be restricted and filtered, e.g., using firewalls, to prevent unauthorized access and ensure that only authorized Employees can access the system, based on their roles and responsibilities (e.g., System Admin, Operations Manager, Security Manager).",
+      "requirements_list": [
+        {
+          "name": "Factory Network Access Restriction",
+          "description": "Connection of external systems, including Supply Vehicles, AGVs, Robots, IoT middleware platforms, Logistics Terminal systems, and Employee devices, to the Factory network must be restricted and filtered to prevent unauthorized access."
+        },
+        {
+          "name": "Assembly Line Network Access Restriction",
+          "description": "Connection of AGVs and Robots' systems to the Assembly Line network must be restricted and filtered to prevent unauthorized access and ensure that only authorized AGVs and Robots can operate on the Assembly Line."
+        },
+        {
+          "name": "System Access Role-Based Control",
+          "description": "Employee access to the system must be restricted and filtered based on their roles and responsibilities to prevent unauthorized access and ensure that only authorized Employees can access the system."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "{Network administration channels} must be segregated from {other network traffic}.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements adapted from the provided cybersecurity standard:\n\n1. **Segregation of System Admin Channels**\nThe system admin channels used for managing the IT infrastructure of the Factory must be segregated from other network traffic, including data communication with the Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, Production Plan Data Store, Finished Car Registry, Logistics Terminal Car Registry, Purchase Order and Transport Order Data Stores.\n\n2. **Segregation of Operations Manager Channels**\nThe operations manager channels used for overseeing the production process, optimizing inefficiencies, and coordinating machinery like AGVs and robots must be segregated from other network traffic, including data communication with the Warehouse Inventory, Production Plan Data Store, and Finished Car Registry.\n\n3. **Segregation of Security Manager Channels**\nThe security manager channels used for implementing and overseeing security procedures and events must be segregated from other network traffic, including data communication with the Access Gate, Docks, and Logistics Terminal.",
+      "requirements_list": [
+        {
+          "name": "Segregation of System Admin Channels",
+          "description": "The system admin channels used for managing the IT infrastructure of the Factory must be segregated from other network traffic, including data communication with the Requisitions Data Store, Supply Vehicles Registry, Warehouse Inventory, Production Plan Data Store, Finished Car Registry, Logistics Terminal Car Registry, Purchase Order and Transport Order Data Stores."
+        },
+        {
+          "name": "Segregation of Operations Manager Channels",
+          "description": "The operations manager channels used for overseeing the production process, optimizing inefficiencies, and coordinating machinery like AGVs and robots must be segregated from other network traffic, including data communication with the Warehouse Inventory, Production Plan Data Store, and Finished Car Registry."
+        },
+        {
+          "name": "Segregation of Security Manager Channels",
+          "description": "The security manager channels used for implementing and overseeing security procedures and events must be segregated from other network traffic, including data communication with the Access Gate, Docks, and Logistics Terminal."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "Implement cryptographic measures to safeguard {information stored} on {mobile user} {endpoint devices} or {storage media} and transmitted over {networks}.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements:\n\n**1. Secure Component Identification Data**\n\nImplement cryptographic measures to safeguard Component identification data stored on handheld devices used by Warehouse Workers and transmitted over the Factory's internal networks.\n\n**2. Protect Finished Car Registry Information**\n\nImplement cryptographic measures to safeguard Finished Car Registry information stored on endpoint devices used by Finished Car Yard Managers and transmitted over the networks connecting the Factory to the Logistics Terminal.\n\n**3. Safeguard Requisition and Purchase Order Data**\n\nImplement cryptographic measures to safeguard Requisition and Purchase Order data stored on endpoint devices used by Shipping Managers and transmitted over the networks connecting the Factory to Dealers.\n\n**4. Secure AIDC Data Transmission**\n\nImplement cryptographic measures to safeguard AIDC data transmitted over the networks connecting the Factory's Access Gate, Docks, Warehouse, and Assembly Line.\n\n**5. Protect Supply Vehicle and Driver Information**\n\nImplement cryptographic measures to safeguard Supply Vehicle and driver information stored on endpoint devices used by Access Control Managers and transmitted over the Factory's internal networks.",
+      "requirements_list": [
+        {
+          "name": "Secure Component Identification Data",
+          "description": "Implement cryptographic measures to safeguard Component identification data stored on handheld devices used by Warehouse Workers and transmitted over the Factory's internal networks."
+        },
+        {
+          "name": "Protect Finished Car Registry Information",
+          "description": "Implement cryptographic measures to safeguard Finished Car Registry information stored on endpoint devices used by Finished Car Yard Managers and transmitted over the networks connecting the Factory to the Logistics Terminal."
+        },
+        {
+          "name": "Safeguard Requisition and Purchase Order Data",
+          "description": "Implement cryptographic measures to safeguard Requisition and Purchase Order data stored on endpoint devices used by Shipping Managers and transmitted over the networks connecting the Factory to Dealers."
+        },
+        {
+          "name": "Secure AIDC Data Transmission",
+          "description": "Implement cryptographic measures to safeguard AIDC data transmitted over the networks connecting the Factory's Access Gate, Docks, Warehouse, and Assembly Line."
+        },
+        {
+          "name": "Protect Supply Vehicle and Driver Information",
+          "description": "Implement cryptographic measures to safeguard Supply Vehicle and driver information stored on endpoint devices used by Access Control Managers and transmitted over the Factory's internal networks."
+        }
+      ]
+    }
+  },
+  {
+    "nfr": "Establish a comprehensive key management system, including procedures for generating and protecting {cryptographic keys} and recovering {encrypted data} in case of lost, compromised, or damaged {keys}.",
+    "adapted_nfr": {
+      "requirements_document": "Here are the project-specific non-functional requirements:\n\n**1. Key Management for Secure Component Tracking**\n\nEstablish a comprehensive key management system to ensure the secure tracking of Components throughout the Factory. This includes procedures for generating and protecting cryptographic keys used to identify and authenticate Components, as well as recovering encrypted Component data in case of lost, compromised, or damaged keys.\n\n**2. Secure Key Management for Car Identity and Authentication**\n\nImplement a key management system to securely manage the unique identifiers (VIN) assigned to finished Cars. This includes procedures for generating and protecting cryptographic keys used to authenticate and verify Car identities, as well as recovering encrypted Car data in case of lost, compromised, or damaged keys.\n\n**3. Key Management for Secure Communication with External Entities**\n\nEstablish a key management system to ensure secure communication with external entities, including Providers, Dealers, and Forwarders. This includes procedures for generating and protecting cryptographic keys used to encrypt and authenticate data exchanged with these entities, as well as recovering encrypted data in case of lost, compromised, or damaged keys.",
+      "requirements_list": [
+        {
+          "name": "Comprehensive Key Management for Component Tracking",
+          "description": "Establish a comprehensive key management system to ensure the secure tracking of Components throughout the Factory. This includes procedures for generating and protecting cryptographic keys used to identify and authenticate Components, as well as recovering encrypted Component data in case of lost, compromised, or damaged keys."
+        },
+        {
+          "name": "Secure Key Management for Car Identity and Authentication",
+          "description": "Implement a key management system to securely manage the unique identifiers (VIN) assigned to finished Cars. This includes procedures for generating and protecting cryptographic keys used to authenticate and verify Car identities, as well as recovering encrypted Car data in case of lost, compromised, or damaged keys."
+        },
+        {
+          "name": "Key Management for Secure Communication with External Entities",
+          "description": "Establish a key management system to ensure secure communication with external entities, including Providers, Dealers, and Forwarders. This includes procedures for generating and protecting cryptographic keys used to encrypt and authenticate data exchanged with these entities, as well as recovering encrypted data in case of lost, compromised, or damaged keys."
+        }
+      ]
+    }
+  }
+]
