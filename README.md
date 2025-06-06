@@ -31,20 +31,26 @@ Given that [python3](https://www.python.org/downloads/) and [pip](https://pypi.o
 git clone git@github.com:STRAST-UPM/ai_requirements_generation_rr.git
 ```
 
-2. Create python [virtual environment](https://docs.python.org/3/library/venv.html) and activate it (**recommended**)
+2. Change to the `generate_requirements` directory.
+
+```bash
+cd src/generate-requirements
+```
+
+3. Create a python [virtual environment](https://docs.python.org/3/library/venv.html) and activate it (**recommended**)
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate 
 ```
 
-3. Install all required dependencies.
+4. Install all required dependencies.
 
 ```bash
-pip install -r app/requirements.txt
+pip install -r requirements.txt
 ```
 
-4. Create a `.env` file at the [/app](/app) directory with the following content (depending on the models you want to use):
+5. Create a `.env` file with the following content (depending on the models you want to use):
 
 ```bash
 HUGGINGFACE_API_TOKEN=<your_token>
@@ -53,9 +59,9 @@ OPENAI_API_TOKEN=<your_token>
 ```
 
 > [!TIP]
-> You may find an example of the `.env` file at [/app/.env.example](/app/adapt-standard/.env.example).
+> You may find an example of the `.env` file at [.env.example](/src/generate-requirements/.env.example).
 
-5. If you want to use models provided by AWS, configure AWS CLI with the credentials provided by the AWS administration console.
+6. If you want to use models provided by AWS, configure AWS CLI with the credentials provided by the AWS administration console.
 
 ```bash
 aws configure
@@ -67,7 +73,9 @@ aws configure
 
 ### Generation of Cybersecurity Requirements
 
-To generate cybersecurity requirements for a given system description, you may use the [/app/main.py](/app/main.py) script. You may specify the following parameters:
+To generate cybersecurity requirements for a given system description, you may use the [/src/generate
+-requirements/main.py](/src/generate
+-requirements/main.py) script. You may specify the following parameters:
 
 `-s STANDARDS`, to set the path of the file containing the adapted cybersecurity standards, as a `.json` file.
 
@@ -75,21 +83,23 @@ To generate cybersecurity requirements for a given system description, you may u
 
 `-o OUTPUT`, to set the path of the folder containing the generated cybersecurity requirements, as a `.json` file and the execution details.
 
-`-c CHAIN`, to set the name of the Langchain's chain topology declaration to use (located at [/app/templates/chain](/app/templates/chain)).
+`-c CHAIN`, to set the name of the Langchain's chain topology declaration to use (located at [/src/generate
+-requirements/templates/chain](/src/generate
+-requirements/templates/chain)).
 
 `--help`, to show the help message for the script.
 
 Example:
 ```bash
-python app/main.py \
-    --standards artifacts/annotated_standard_subset.json \
-    --domain artifacts/ai4i4.md \
-    --output generated/requirements \
+python main.py \
+    --standards data/annotated_standard_subset.json \
+    --domain data/ai4i4.md \
+    --output results/requirements \
     --chain cot_llama
 ```
 
 > [!IMPORTANT]
-> In its default configuration, the [requirements generation script](/app/generate-requirements/main.py) makes use of the _meta.llama3-1-405b-instruct-v1:0_ model provided by AWS for serverless inference.
+> In its default configuration, the [requirements generation script](/src/generate-requirements/main.py) makes use of the _meta.llama3-1-405b-instruct-v1:0_ model provided by AWS for serverless inference.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

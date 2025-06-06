@@ -1,6 +1,6 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-This applies to all data files in the repository (i.e., contents of the /artifacts and /generated directories).
+This applies to all data files in the repository (i.e., contents of the /data and /results directories).
 
 You are free to:
 - Share — copy and redistribute the material
