@@ -1,0 +1,81 @@
+[
+  {
+    "norm": "ISO 27002 8.5",
+    "nfrs": [
+      "{Log-on procedure} must not display sensitive system or application information until the process has been successfully completed.",
+      "A {general notice} must be displayed, warning that the {system, application, or service} should only be accessed by authorized users.",
+      "{Help messages} during the log-on procedure must not aid an unauthorized user, e.g., by indicating which parts of the data are correct or incorrect.",
+      "{Log-on information} must be validated only upon completion of all input data.",
+      "Brute force log-on attempts must be protected against, e.g., through the use of {CAPTCHA}, password reset after a predefined number of failed attempts, or blocking the user after a maximum number of errors.",
+      "All {unsuccessful and successful} attempts must be logged.",
+      "A {security event} must be raised if a potential attempted or successful breach of log-on controls is detected, e.g., sending an alert to the user and the organization's system administrators when a certain number of wrong password attempts has been reached.",
+      "Passwords must not be displayed in {clear text} when they are being entered, unless de-activation is required for accessibility reasons or to avoid blocking users due to repeated errors.",
+      "Passwords must not be transmitted in {clear text} over a network to avoid being captured by a network \"sniffer\" program.",
+      "Inactive sessions must be terminated after a defined period of inactivity, particularly in high-risk locations such as public or external areas outside the organization's security management or on {user endpoint devices}.",
+      "Connection durations must be restricted to provide additional security for high-risk applications and reduce the window of opportunity for unauthorized access."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.3",
+    "nfrs": [
+      "{Access to sensitive information} must be restricted to authorized users and devices, and anonymous or public access should only be allowed for non-sensitive information.",
+      "{Configuration mechanisms} must be provided to control access to information in {systems, applications, and services}.",
+      "{Access to data} must be controlled based on {user identity, group membership, and assigned roles}.",
+      "{Physical or logical access controls} must be implemented to isolate {sensitive applications, data, or systems}.",
+      "{Dynamic access management techniques} must be used to protect {sensitive information with high value to the organization}, including {granular control over access periods, real-time revocation, and monitoring of usage}.",
+      "{Rules for dynamic access management} must be established based on specific {use cases}, considering factors such as {identity, device, location, and application}.",
+      "{Operational, monitoring, and reporting processes} and {supporting technical infrastructure} must be established for {dynamic access management}.",
+      "{Authentication}, {appropriate credentials}, or {certificates} must be required to access {information}.",
+      "{Access restrictions} must be enforced, such as limiting access to a specified {time frame} or {encrypting information}.",
+      "{Printing permissions} for {sensitive information} must be defined and enforced.",
+      "{User activity logging and alerting} must be implemented to detect and respond to potential {misuse of sensitive information}."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.2",
+    "nfrs": [
+      "{Privileged access rights} shall be granted on an event-by-event basis and shall be subject to an {authorization process}.",
+      "The organization shall maintain a {record} of all {privileges allocated}.",
+      "{Privileged access rights} shall have a limited {lifetime} and shall be subject to periodic {review}.",
+      "Users shall be made aware of their {privileged access rights} and when they are in {privileged access mode} through specific {user identities}, {user interface settings}, or dedicated {equipment}.",
+      "{Authentication requirements} for privileged access rights shall be stricter than those for regular access rights, possibly requiring {re-authentication} or {step-up authentication}.",
+      "The organization shall regularly review users with {privileged access rights} to ensure that their {duties}, {roles}, {responsibilities}, and {competence} still justify such access.",
+      "{Generic administration user IDs} shall be avoided where possible, and specific rules shall be established to manage and protect {authentication information}.",
+      "Temporary {privileged access} shall be granted only for the duration necessary to implement approved {changes} or {activities}.",
+      "All {privileged access} to systems shall be logged for {audit purposes}.",
+      "Each person shall have a unique {identity} with {privileged access rights}, and identities shall not be shared or linked to multiple persons.",
+      "{Privileged access rights} shall be used exclusively for administrative {tasks} and not for day-to-day general {tasks}."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.20",
+    "nfrs": [
+      "{Network} must support the type and classification level of information as specified by the {organization}.",
+      "{Procedures} for the management of {networking equipment and devices}, including their {responsibilities}, must be established.",
+      "{Up-to-date documentation}, including network diagrams and configuration files of {devices}, must be maintained.",
+      "{Operational responsibility} for networks must be separated from {ICT system operations} where appropriate.",
+      "{Controls} must be established to safeguard the confidentiality and integrity of {data passing over public networks}, {third-party networks}, or {wireless networks}, and to protect {connected systems} and {applications}.",
+      "{Appropriate logging and monitoring} must be implemented to enable recording and detection of actions that can affect or are relevant to {information security}.",
+      "{Network management activities} must be closely coordinated to optimize the service to the {organization} and ensure consistent application of {controls} across the {information processing infrastructure}.",
+      "{Systems} on the {network} must be authenticated.",
+      "{Connection} of {systems} to the {network} must be restricted and filtered, e.g., using {firewalls}.",
+      "{Connection} of {equipment and devices} to the {network} must be detected, restricted, and authenticated.",
+      "{Network devices} must be {hardened}.",
+      "{Network administration channels} must be segregated from other {network traffic}.",
+      "{Critical subnetworks} must be temporarily isolated, e.g., with {drawbridges}, if the {network} is under {attack}.",
+      "{Vulnerable network protocols} must be {disabled}."
+    ]
+  },
+  {
+    "norm": "ISO 27002 8.24",
+    "nfrs": [
+      "Ensure that a topic-specific policy on cryptography is defined and communicated within the organization, outlining the general principles for protecting information and guidelines for the appropriate use of cryptographic techniques. {policy, cryptography, information, organization}",
+      "Identify the required level of protection and classify the information to determine the suitable type, strength, and quality of cryptographic algorithms to use. {protection, classification, information, algorithms}",
+      "Implement cryptographic measures to safeguard information stored on {mobile user endpoint devices} or storage media and transmitted over networks. {endpoint devices, storage media, networks}",
+      "Establish a comprehensive key management system, including procedures for generating and protecting cryptographic keys and recovering encrypted data in case of lost, compromised, or damaged keys. {key management, keys, cryptographic keys, data}",
+      "Define roles and responsibilities for implementing cryptography rules and key management, including key generation. {roles, responsibilities, key generation}",
+      "Adopt industry-recognized standards and algorithms for cryptography, and specify the approved cipher strengths and cryptographic solutions for use within the organization. {standards, algorithms, cipher strengths, cryptographic solutions}",
+      "Consider the potential impact of encrypting information on {content inspection controls}, such as malware detection or content filtering. {content inspection controls, malware detection, content filtering}"
+    ]
+  }
+]
