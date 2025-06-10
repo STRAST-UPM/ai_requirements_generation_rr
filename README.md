@@ -1,27 +1,50 @@
-# TODO: Name of the paper
+# Reproducible Research Package | A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities
 
-## TODO: Research Description
+This repository accompanies the paper **“A Case Study on Cyber‑Security Requirement Elicitation: Leveraging Large‑Language‑Model Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
 
-## TODO: About This Repository
+## Research Description
 
-### TODO Review: Built Using
+This project investigates the practical use of state‑of‑the‑art Large Language Models (LLMs) to transform high‑level, standard‑driven cyber‑security controls into concrete, system‑specific requirements.  Using a synthetic yet industrially plausible case study—AI4I4, an IoT‑enabled automotive logistics platform—we benchmark thirteen frontier models (GPT‑4, LLaMa 3, Mistral, QWen, etc.), representing tge state of the art as of September 2024, across four prompting pipelines and three temperature regimes.
 
-Base technologies:
+Key contributions include:
 
-* [Python](https://www.python.org/)
-* [LangChain](https://www.langchain.com/)
-* [LLaMa 3](https://www.llama.com/)
+1. **Annotated benchmark** of 54 ISO‑27002 clauses with placeholder semantics suitable for automatic instantiation.
+2. **LangChain pipelines** that decompose the task into applicability filtering, domain‑element search, requirement generation, and JSON formatting.
+3. **Comprehensive evaluation** of accuracy (precision, recall, F2), creativity (F2‑synthetic), and consistency (Jaccard overlap across runs).
+4. **Prompt library** enumerating >180 templates, showing how subtle changes in instruction design affect hallucination rate and coverage.
 
-Additional dependencies:
+The artefacts and scripts below allow full replication—from raw prompts to final figures—on any infrastructure with access to the referenced models.
 
-* [NumPy](https://numpy.org/)
-* [HuggingFace Hub](https://huggingface.co/)
+## Repository Structure
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+```text
+.
+├── data/                  # Experimental inputs
+│   ├── ai4i4.md           # Functional specification of the AI4I4 case study
+│   ├── annotated_standard_subset.json   # Annotated subset of ISO‑27002 clauses
+│   └── prompt/            # Prompt templates organised by task and model
+├── src/                   # LangChain pipelines and helper scripts
+│   ├── generate_requirements/  # End‑to‑end automation
+│   └── graph/                 # Scripts to render result figures
+├── results/               # Raw outputs and aggregated metrics
+│   ├── requirements/      # Requirement lists (human + models)
+│   ├── analysis/          # Coverage, F‑scores, Jaccard, etc.
+│   └── graph/             # Re‑generated figures from the manuscript
+├── doc/                   # Execution logs for every configuration
+├── LICENSE, LICENSE_DATA.txt
+└── README.md              # This document
+```
 
 ## Getting Started
 
-Given that [python3](https://www.python.org/downloads/) and [pip](https://pypi.org/project/pip/) are installed and correctly configured in the system, and assuming that you have a valid [Huggingface PRO token](https://huggingface.co/pricing#pro), you may follow these steps.
+Given that [python3](https://www.python.org/downloads/) and [pip](https://pypi.org/project/pip/) are installed and correctly configured in the system, and assuming that you have (depending on the model(s) you intend to use):
+
+- A valid [Huggingface PRO token](https://huggingface.co/pricing#pro).
+- Granted acces the intended models on [AWS Bedrock](https://aws.amazon.com/bedrock/).
+- A valid [OpenAI API key](https://platform.openai.com/docs/api-reference/authentication).
+- A valid [Mistral API key](https://mistral.ai/).
+
+You may follow the steps below to set up the environment and run the scripts.
 
 ### Prerequisites
 
@@ -67,8 +90,6 @@ OPENAI_API_TOKEN=<your_token>
 aws configure
 ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Execution
 
 ### Generation of Cybersecurity Requirements
@@ -101,23 +122,66 @@ python main.py \
 > [!IMPORTANT]
 > In its default configuration, the [requirements generation script](/src/generate-requirements/main.py) makes use of the _meta.llama3-1-405b-instruct-v1:0_ model provided by AWS for serverless inference.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Key Artifacts
 
-## License
+| Path                               | Brief description                                     |
+| ---------------------------------- | ----------------------------------------------------- |
+| `data/ai4i4.md`                    | System specification of the pilot use‑case.           |
+| `annotated_standard_subset.json`   | Parameterised ISO‑27002 controls.                     |
+| `data/prompt/**`                   | 180+ prompt templates, categorised by task and model. |
+| `results/analysis/summary.csv`     | Precision, recall, F2 and uplift F2 for every run.    |
+| `results/analysis/consistency.csv` | Jaccard indices across successive runs.               |
+| `doc/*_execution_details.md`       | Detailed execution logs per configuration.            |
+
+Complete dataset datasheets are provided in the [data/README.md](data/README.md) and [results/README.md](results/README.md) files.
+
+## Reproducibility Notes
+
+- **Determinism**  Because of the inherent stochasticity of LLMs, results may vary across runs. Please refer to the consistency metrics in `results/analysis/consistency.csv` to assess stability considerations.
+- **Data licensing**  ISO‑27002 excerpts are replaced by identifiers to comply with copyright; users must possess the full standard.
+- **Model access**  Some models (e.g., GPT‑4, Mistral) require API keys or specific access permissions. Ensure you have the necessary credentials before running the scripts.
+- **Environment**  The scripts are tested on Python 3.10+ with the dependencies listed in `requirements.txt`. Ensure your environment matches these specifications to avoid compatibility issues.
+
+## Ethics and Intended Use
+
+This research is conducted under the principles of responsible AI. The generated requirements are intended for educational and research purposes only. Users must ensure compliance with local laws and ethical guidelines when applying these results in real-world scenarios.
+
+Any use involving production compliance auditing, legal certification, or critical system design should involve human oversight and validation by qualified cybersecurity professionals.
+
+## Version History
+
+| Version | Date       | Highlights                                                  |
+| ------- | ---------- | ----------------------------------------------------------- |
+| 1.0     | 2025‑06‑30 | Initial public release, aligned with paper submission.      |
+
+## License and Citation
 
 This repository uses two licenses:
 
 - **Code**: MIT License (see [LICENSE](LICENSE)).
 - **Data**: Creative Commons Attribution 4.0 International (CC BY 4.0) (see [LICENSE](LICENSE_DATA.txt)).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+If you use this repository in your research, please cite it as follows:
+
+```bibtex
+@inproceedings{llmsec2025iso,
+  author={Yelmo, Juan Carlos and Martín, Yod-Samuel and Perez-Acuña, Santiago},
+  title={Reproducible Research Package | A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities},
+  year={2025},
+  url={https://github.com/STRAST-UPM/ai_requirements_generation_rr},
+  doi={?????},
+  version={1.0},
+}
+```
 
 ## Contact
 
-Juan Carlos Yelmo García - juancarlos.yelmo@upm.es
+Juan Carlos Yelmo García - [juancarlos.yelmo@upm.es](mailto:juancarlos.yelmo@upm.es)
 
-Yod Samuel Martín García - ys.martin@upm.es
+Yod Samuel Martín García - [ys.martin@upm.es](mailto:ys.martin@upm.es)
 
-Santiago Pérez Acuña - santiago.perez.acuna@upm.es
+Santiago Pérez Acuña - [santiago.perez.acuna@upm.es](mailto:santiago.perez.acuna@upm.es)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+---
+
+*Last updated : 2025‑06‑30*

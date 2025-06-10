@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Reproducible Research Package | A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities"
+authors:
+  - family-names: Doe
+    given-names: Jane
+doi: ?????
+license:
+  - spdx: MIT License
+  - spdx: CC-BY-4.0
+version: 1.0.0
+date-released: 2025-06-30
+url: "https://github.com/STRAST-UPM/ai_requirements_generation_rr"
