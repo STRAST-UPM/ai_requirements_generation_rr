@@ -1,9 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Reproducible Research Package | A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities"
+title: "A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package"
 authors:
-  - family-names: Doe
-    given-names: Jane
+  - family-names: Yelmo
+    given-names: Juan Carlos
+  - family-names: Martín
+    given-names: Yod-Samuel
+  - family-names: Perez-Acuna
+    given-names: Santiago
 doi: ?????
 license:
   - spdx: MIT License

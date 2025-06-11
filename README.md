@@ -1,4 +1,4 @@
-# Reproducible Research Package | A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities
+# A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package
 
 This repository accompanies the paper **“A Case Study on Cyber‑Security Requirement Elicitation: Leveraging Large‑Language‑Model Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
 
@@ -164,9 +164,9 @@ This repository uses two licenses:
 If you use this repository in your research, please cite it as follows:
 
 ```bibtex
-@inproceedings{llmsec2025iso,
-  author={Yelmo, Juan Carlos and Martín, Yod-Samuel and Perez-Acuña, Santiago},
-  title={Reproducible Research Package | A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities},
+@misc{llmsec2025iso,
+  author={Yelmo, Juan Carlos and Martín, Yod-Samuel and Perez-Acuna, Santiago},
+  title={A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package},
   year={2025},
   url={https://github.com/STRAST-UPM/ai_requirements_generation_rr},
   doi={?????},
