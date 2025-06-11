@@ -1,5 +1,7 @@
 # A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641295.svg)](https://zenodo.org/record/15641295)
+
 This repository accompanies the paper **“A Case Study on Cyber‑Security Requirement Elicitation: Leveraging Large‑Language‑Model Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
 
 ## Research Description
@@ -169,7 +171,7 @@ If you use this repository in your research, please cite it as follows:
   title={A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package},
   year={2025},
   url={https://github.com/STRAST-UPM/ai_requirements_generation_rr},
-  doi={?????},
+  doi={10.5281/zenodo.15641295},
   version={1.0},
 }
 ```
