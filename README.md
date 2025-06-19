@@ -160,7 +160,7 @@ Any use involving production compliance auditing, legal certification, or critic
 
 This repository uses two licenses:
 
-- **Code**: MIT License (see [LICENSE](LICENSE)).
+- **Software**: Proprietary license — personal, non-commercial research use only; no modification, redistribution, or commercial use permitted (see [LICENSE](LICENSE)).
 - **Data**: Creative Commons Attribution 4.0 International (CC BY 4.0) (see [LICENSE](LICENSE_DATA.txt)).
 
 If you use this repository in your research, please cite it as follows:

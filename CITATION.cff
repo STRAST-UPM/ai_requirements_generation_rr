@@ -20,7 +20,7 @@ identifiers:
     value: 10.5281/zenodo.15641295
     description: "Zenodo"
 license:
-  - spdx: MIT License
+  - spdx: LicenseRef-Proprietary
   - spdx: CC-BY-4.0
 version: 1.0.0
 date-released: 2025-06-30
