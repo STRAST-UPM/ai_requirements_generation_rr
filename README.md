@@ -135,7 +135,8 @@ python main.py \
 | `results/analysis/consistency.csv` | Jaccard indices across successive runs.               |
 | `doc/*_execution_details.md`       | Detailed execution logs per configuration.            |
 
-Complete dataset datasheets are provided in the [data/README.md](data/README.md) and [results/README.md](results/README.md) files.
+> [!IMPORTANT]
+> Complete dataset datasheets are provided in the [data/README.md](data/README.md) and [results/README.md](results/README.md) files.
 
 ## Reproducibility Notes
 
