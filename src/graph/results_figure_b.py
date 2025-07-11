@@ -24,21 +24,17 @@ line_color = 'black'
 # Font config
 plt.rcParams.update({
   'font.family': 'Times New Roman',
-  'font.size': 14,
-  'axes.labelsize': 16,
-  'xtick.labelsize': 13,
-  'ytick.labelsize': 13,
-  'legend.fontsize': 14
+  'font.size': 18,
+  'axes.labelsize': 20,
+  'xtick.labelsize': 16,
+  'ytick.labelsize': 16,
+  'legend.fontsize': 18
 })
 
 # Actual data (could be loaded from file)
-p_best_center = np.array([0.9304, 0.8162, 0.8792, 0.6820, 0.5439, 0.7829, 0.6270, 0.7413, 0.7163, 0.7829, 0.7970, 0.6401, 0.7970, 0.6469, 0.7681])
-p_best_low =    np.array([0.8855, 0.7448, 0.8199, 0.5953, 0.4509, 0.7066, 0.5369, 0.6600, 0.6326, 0.7066, 0.7227, 0.5507, 0.7227, 0.5578, 0.6899])
-p_best_high =   np.array([0.9754, 0.8876, 0.9385, 0.7686, 0.6368, 0.8592, 0.7171, 0.8226, 0.8001, 0.8592, 0.8713, 0.7295, 0.8713, 0.7359, 0.8463])
-
-p_worst_center = np.array([0.9241, 0.7896, 0.8668, 0.6770, 0.4258, 0.7599, 0.5731, 0.6987, 0.6469, 0.7413, 0.6987, 0.5210, 0.7632, 0.6149, 0.7252])
-p_worst_low =    np.array([0.8770, 0.7142, 0.8047, 0.5899, 0.3335, 0.6807, 0.4809, 0.6134, 0.5578, 0.6600, 0.6134, 0.4278, 0.6845, 0.5242, 0.6423])
-p_worst_high =   np.array([0.9712, 0.8649, 0.9288, 0.7640, 0.5180, 0.8390, 0.6654, 0.7840, 0.7359, 0.8226, 0.7840, 0.6142, 0.8420, 0.7056, 0.8081])
+p_center = np.array([0.9304, 0.8162, 0.8792, 0.6820, 0.5439, 0.7829, 0.6270, 0.7413, 0.7163, 0.7829, 0.7970, 0.6401, 0.7970, 0.6469, 0.7681])
+p_low =    np.array([0.8855, 0.7448, 0.8199, 0.5953, 0.4509, 0.7066, 0.5369, 0.6600, 0.6326, 0.7066, 0.7227, 0.5507, 0.7227, 0.5578, 0.6899])
+p_high =   np.array([0.9754, 0.8876, 0.9385, 0.7686, 0.6368, 0.8592, 0.7171, 0.8226, 0.8001, 0.8592, 0.8713, 0.7295, 0.8713, 0.7359, 0.8463])
 
 r_best_center = np.array([0.4678, 0.3263, 0.3391, 0.5579, 0.2491, 0.3134, 0.3263, 0.2104, 0.2877, 0.3134, 0.2877, 0.2748, 0.2877, 0.2104, 0.1976])
 r_best_low =    np.array([0.3747, 0.2390, 0.2510, 0.4653, 0.1688, 0.2271, 0.2390, 0.1351, 0.2035, 0.2271, 0.2035, 0.1919, 0.2035, 0.1351, 0.1241])
@@ -58,8 +54,8 @@ def merge_extremes(low1, center1, high1, low2, center2, high2):
   )
 
 merged_p_low, merged_p_cmin, merged_p_cmax, merged_p_high = merge_extremes(
-  p_best_low, p_best_center, p_best_high,
-  p_worst_low, p_worst_center, p_worst_high
+  p_low, p_center, p_high,
+  p_low, p_center, p_high
 )
 
 merged_r_low, merged_r_cmin, merged_r_cmax, merged_r_high = merge_extremes(
