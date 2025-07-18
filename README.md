@@ -1,4 +1,4 @@
-# A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package
+# AI-augmented Cybersecurity Requirements Generation using LLMs | Reproducible Research Package
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641295.svg)](https://zenodo.org/record/15641295)
 
