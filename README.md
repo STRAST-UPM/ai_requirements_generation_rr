@@ -155,7 +155,7 @@ Any use involving production compliance auditing, legal certification, or critic
 
 | Version | Date       | Highlights                                                  |
 | ------- | ---------- | ----------------------------------------------------------- |
-| 1.0     | 2025‑07-17 | Initial public release, aligned with paper submission.      |
+| 1.0     | 2025‑07-17 | Initial public release.                                     |
 
 ## License and Citation
 

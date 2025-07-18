@@ -50,7 +50,7 @@ This datasheet follows the structure proposed by **Gebru et al. (2021) *“D
 
 | Version | Date       | Change                                            |
 | ------- | ---------- | ------------------------------------------------- |
-| 1.0     | 2025‑06-30 | Initial public release matching paper submission. |
+| 1.0     | 2025‑06-30 | Initial public release.                           |
 
 ---
 
