@@ -155,7 +155,7 @@ Any use involving production compliance auditing, legal certification, or critic
 
 | Version | Date       | Highlights                                                  |
 | ------- | ---------- | ----------------------------------------------------------- |
-| 1.0     | 2025‑06‑30 | Initial public release, aligned with paper submission.      |
+| 1.0     | 2025‑07-17 | Initial public release, aligned with paper submission.      |
 
 ## License and Citation
 
@@ -187,4 +187,4 @@ Santiago Pérez Acuña - [santiago.perez.acuna@upm.es](mailto:santiago.perez.acu
 
 ---
 
-*Last updated : 2025‑06‑30*
+*Last updated : 2025‑07-17*
