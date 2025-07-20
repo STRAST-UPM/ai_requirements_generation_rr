@@ -131,7 +131,7 @@ python main.py \
 | `data/ai4i4.md`                    | System specification of the pilot use‑case.           |
 | `annotated_standard_subset.json`   | Parameterised ISO‑27002 controls.                     |
 | `data/prompt/**`                   | 180+ prompt templates, categorised by task and model. |
-| `results/analysis/summary.csv`     | Precision, recall, F2 and uplift F2 for every run.    |
+| `results/analysis/summary.csv`     | Precision, recall, F2 and relative F2 for every run.  |
 | `results/analysis/consistency.csv` | Jaccard indices across successive runs.               |
 | `doc/*_execution_details.md`       | Detailed execution logs per configuration.            |
 

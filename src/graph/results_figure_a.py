@@ -47,7 +47,7 @@ ax.grid(True, linestyle='--', alpha=0.5)
 
 # Custom legend
 f2_patch = mpatches.Patch(color='#1f77b4', label='F2')
-f2s_patch = mpatches.Patch(color='#ff7f0e', label='Uplift F2')
+f2s_patch = mpatches.Patch(color='#ff7f0e', label='Relative F2')
 ax.legend(handles=[f2_patch, f2s_patch], loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=2, frameon=False)
 
 # Save and display
