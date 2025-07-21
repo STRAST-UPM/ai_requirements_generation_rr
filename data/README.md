@@ -40,18 +40,3 @@ This datasheet follows the structure proposed by **Gebru et al. (2021) *“D
 
 * Production‑grade compliance audits.
 * Training commercial models without acknowledging ISO copyright.
-
-## Distribution & Licensing
-
-* **Data licence** Creative Commons BY‑4.0 for annotations and metadata.
-* **ISO text** © ISO. Only restructured requirements provided; users must hold an ISO licence to reconstruct full clauses.
-
-## Version History
-
-| Version | Date       | Change                                            |
-| ------- | ---------- | ------------------------------------------------- |
-| 1.0     | 2025‑06-30 | Initial public release.                           |
-
----
-
-*Last updated : 2025‑07-17*

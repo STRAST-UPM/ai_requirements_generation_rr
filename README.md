@@ -1,12 +1,10 @@
 # AI-augmented Cybersecurity Requirements Generation using LLMs | Reproducible Research Package
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641295.svg)](https://zenodo.org/record/15641295)
-
-This repository accompanies the paper **“A Case Study on Cyber‑Security Requirement Elicitation: Leveraging Large‑Language‑Model Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
+This repository accompanies the paper **“Ensembling LLMs for AI-augmented Cybersecurity Software Requirements Generation.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
 
 ## Research Description
 
-This project investigates the practical use of state‑of‑the‑art Large Language Models (LLMs) to transform high‑level, standard‑driven cyber‑security controls into concrete, system‑specific requirements.  Using a synthetic yet industrially plausible case study—AI4I4, an IoT‑enabled automotive logistics platform—we benchmark thirteen frontier models (GPT‑4, LLaMa 3, Mistral, QWen, etc.), representing tge state of the art as of September 2024, across four prompting pipelines and three temperature regimes.
+This project investigates the practical use of state‑of‑the‑art Large Language Models (LLMs) to transform high‑level, standard‑driven cyber‑security controls into concrete, system‑specific requirements.  Using a synthetic yet industrially plausible case study—AI4I4, an IoT‑enabled automotive logistics platform—we benchmark thirteen frontier models (GPT‑4, LLaMa 3, Mistral, QWen, etc.) and ensembles built upon those, across four prompting pipelines and three temperature regimes.
 
 Key contributions include:
 
@@ -33,7 +31,6 @@ The artefacts and scripts below allow full replication—from raw prompts to fin
 │   ├── analysis/          # Coverage, F‑scores, Jaccard, etc.
 │   └── graph/             # Re‑generated figures from the manuscript
 ├── doc/                   # Execution logs for every configuration
-├── LICENSE, LICENSE_DATA.txt
 └── README.md              # This document
 ```
 
@@ -50,16 +47,12 @@ You may follow the steps below to set up the environment and run the scripts.
 
 ### Prerequisites
 
-1. Clone this repository locally.
-
-```bash
-git clone git@github.com:STRAST-UPM/ai_requirements_generation_rr.git
-```
+1. Extract the contents of this reproducible research package to a local directory.
 
 2. Change to the `generate_requirements` directory.
 
 ```bash
-cd src/generate-requirements
+cd src/generate_requirements
 ```
 
 3. Create a python [virtual environment](https://docs.python.org/3/library/venv.html) and activate it (**recommended**)
@@ -150,41 +143,3 @@ python main.py \
 This research is conducted under the principles of responsible AI. The generated requirements are intended for educational and research purposes only. Users must ensure compliance with local laws and ethical guidelines when applying these results in real-world scenarios.
 
 Any use involving production compliance auditing, legal certification, or critical system design should involve human oversight and validation by qualified cybersecurity professionals.
-
-## Version History
-
-| Version | Date       | Highlights                                                  |
-| ------- | ---------- | ----------------------------------------------------------- |
-| 1.0     | 2025‑07-17 | Initial public release.                                     |
-
-## License and Citation
-
-This repository uses two licenses:
-
-- **Software**: Proprietary license — personal, non-commercial research use only; no modification, redistribution, or commercial use permitted (see [LICENSE](LICENSE)).
-- **Data**: Creative Commons Attribution 4.0 International (CC BY 4.0) (see [LICENSE](LICENSE_DATA.txt)).
-
-If you use this repository in your research, please cite it as follows:
-
-```bibtex
-@misc{llmsec2025iso,
-  author={Yelmo, Juan Carlos and Martín, Yod-Samuel and Perez-Acuna, Santiago},
-  title={A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package},
-  year={2025},
-  url={https://github.com/STRAST-UPM/ai_requirements_generation_rr},
-  doi={10.5281/zenodo.15641295},
-  version={1.0},
-}
-```
-
-## Contact
-
-Juan Carlos Yelmo García - [juancarlos.yelmo@upm.es](mailto:juancarlos.yelmo@upm.es)
-
-Yod Samuel Martín García - [ys.martin@upm.es](mailto:ys.martin@upm.es)
-
-Santiago Pérez Acuña - [santiago.perez.acuna@upm.es](mailto:santiago.perez.acuna@upm.es)
-
----
-
-*Last updated : 2025‑07-17*

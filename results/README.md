@@ -18,9 +18,10 @@ This datasheet documents the provenance, structure, and intended use of the arte
 | `analysis/relations/completeness/` | CSV tables indicating model-generated related requirements for each requirement of the human baseline.        | 15 CSV          | \~8.5 KB  |  |
 | `analysis/relations/support/`      | CSV tables indicating human-generated related requirements for each requirement of the model generation.        | 15 CSV          | \~8.7 KB  |  |
 | `analysis/consistency.csv`         | Jaccard index analysis across repeated runs.                                         | 1 CSV             | 1 KB     |                |
-| `analysis/summary.csv`             | Precision, recall, F2, F2‑synthetic and other key metrics extracted from the raw data.                                          | 1 CSV             | 5.2 KB     |              |
+| `analysis/summary.csv`             | Precision, recall, F2, F2‑synthetic and other key metrics extracted from the raw data, and ensembles developed on it.                                          | 1 CSV             | 5.2 KB     |              |
 | `analysis/gold_standard.csv`       | De‑duplicated union of all positives.                                    | 1 CSV             | 7 KB     | 75 requirements.                                  |
-| `graph/`                           | PNG figures A & B.                                                            | 2 PNG             | 334 KB   | Regenerated via `src/graph/*.py`.                 |
+| `analysis/ensembles.csv`           | Requirement and hallucination mapping for each item generated, along with its presence in the ensemble composites.                                    | 1 CSV             | 25 KB     |                                   |
+| `graph/`                           | PNG figures.                                                            | 5 PNG             | 560 KB   | Regenerated via `src/graph/*.py`.                 |
 
 ## Data Generation Process
 
@@ -41,17 +42,3 @@ Timestamps for each run are embedded in the execution logs; UTC time zone.
 
 * Training new models: the corpus is too small and biased.
 * Compliance certification: generated requirements are illustrative, not legally vetted.
-
-## Licensing & Distribution
-
-The result files are distributed under **CC‑BY‑4.0**. You may remix, adapt and build upon the data, provided you credit the original authors.
-
-## Version History
-
-| Version | Date       | Change                                            |
-| ------- | ---------- | ------------------------------------------------- |
-| 1.0     | 2025‑06-30 | Initial public release matching paper submission. |
-
----
-
-*Last updated : 2025‑06‑10*
