@@ -214,6 +214,10 @@ if __name__ == "__main__":
       import templates.chain.cot_llama_x4 as config
     case "cot_llama_fewshot":
       import templates.chain.cot_llama_fewshot as config
+    case "cot_llama_norepeat":
+      import templates.chain.cot_llama_norepeat as config
+    case "cot_llama_simplified":
+      import templates.chain.cot_llama_simplified as config
     case "cot_gpt4":
       import templates.chain.cot_gpt4 as config
     case "cot_gpt4_x4":
@@ -223,7 +227,7 @@ if __name__ == "__main__":
     case "cot_mistral":
       import templates.chain.cot_mistral as config
     case "aio_llama":
-      import app.templates.chain.aio_llama as config
+      import templates.chain.aio_llama as config
     case _:
       raise ValueError(f"Chain {args.chain} not found")
   main(args)

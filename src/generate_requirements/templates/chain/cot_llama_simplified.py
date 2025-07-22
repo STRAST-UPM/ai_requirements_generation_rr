@@ -38,7 +38,7 @@ SEARCH_DOMAIN_ELEMENTS_CHAIN = {
   "prompt": {
     "prompt_type": "plain",
     "template_files": [
-      ("plain", "search-domain-elements/llama3/plain-template-v3-lowsigma.txt")
+      ("plain", "search-domain-elements/llama3/plain-template-simplified.txt")
     ],
     "input_variables": ["domain_description", "input_requirement"],
     "output_key": "project_entities_relation"
@@ -63,7 +63,7 @@ GENERATE_CHAIN = {
   "prompt": {
     "prompt_type": "plain",
     "template_files": [
-      ("plain", "generate-requirements/llama3/plain-template-v3.txt")
+      ("plain", "generate-requirements/llama3/plain-template-simplified.txt")
     ],
     "input_variables": ["domain_description", "input_requirement", "project_entities_relation"],
     "output_key": "requirements_document"
@@ -76,21 +76,19 @@ GENERATE_CHAIN = {
 FORMAT_CHAIN = {
   "descriptor": "FORMAT_CHAIN",
   "endpoint": {
-    "provider": "huggingface",
-    "repo_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "provider": "aws-bedrock",
+    "model_id": "meta.llama3-1-70b-instruct-v1:0",
   },
   "parameters": {
     "top_p": 0.95,
     "temperature": 0.5,
-    "repetition_penalty": 1.03,
-    "timeout": 1500,
+    "max_gen_len": 2048,
     "verbose": False
   },
   "prompt": {
-    "prompt_type": "chat",
+    "prompt_type": "plain",
     "template_files": [
-      ("system", "format-json/llama3/system-template-v2.txt"),
-      ("human", "format-json/llama3/user-template-v2.txt")
+      ("plain", "format-json/llama3/plain-template-v2.txt")
     ],
     "input_variables": ["requirements_document"],
     "output_key": "requirements_list"
