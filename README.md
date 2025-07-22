@@ -115,9 +115,9 @@ To generate cybersecurity requirements for a given system description, you may u
 Example:
 ```bash
 python main.py \
-    --standards data/annotated_standard_subset.json \
-    --domain data/ai4i4.md \
-    --output results/requirements \
+    --standards ../../data/annotated_standard_subset.json \
+    --domain ../../data/ai4i4.md \
+    --output ../../results/requirements \
     --chain cot_llama
 ```
 
