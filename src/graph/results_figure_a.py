@@ -3,6 +3,7 @@ import numpy as np
 from matplotlib.lines import Line2D
 import matplotlib.patches as mpatches
 from matplotlib.ticker import MultipleLocator
+from matplotlib.legend_handler import HandlerBase
 
 # Labels for the categories
 labels = ['L0', 'L1', 'L2', 'L3', 'L4', 'L5', 'Q0', 'Q1', 'Q2', 'M0', 'M1', 'M2', 'G0', 'G1', 'G2']
@@ -54,18 +55,44 @@ ax.yaxis.set_minor_locator(MultipleLocator(0.1))
 ax.grid(which='minor', axis='y', linestyle='--', alpha=0.5)
 ax.grid(which='major', axis='y', linestyle='--', alpha=0.5)
 
-# Custom legend
-f2_patch = mpatches.Patch(color='#1f77b4', label='F2')
-f2s_patch = mpatches.Patch(color='#ff7f0e', label='Relative F2')
+# Custom handler to align marker with the first line of text
+class HandlerDotAlignFirstLine(HandlerBase):
+    def create_artists(self, legend, orig_handle,
+                       x0, y0, width, height, fontsize, trans):
+        center = y0 + 1.3 * height  # shift up
+        p = plt.Line2D([x0+40], [center],
+                       linestyle='None',
+                       marker='o',
+                       markersize=14,
+                       markerfacecolor=orig_handle.get_markerfacecolor(),
+                       markeredgecolor='none',
+                       transform=trans)
+        return [p]
+
+# Create dummy handles
+f2_handle = Line2D([0], [0], marker='o', color='w',
+                   markerfacecolor='#1f77b4', markersize=14,
+                   label='F2\n(best/worst)')
+f2s_handle = Line2D([0], [0], marker='o', color='w',
+                    markerfacecolor='#ff7f0e', markersize=14,
+                    label='Relative F2\n(best/worst)')
+
+# Legend with custom handler
 ax.legend(
-  handles=[
-    Line2D([0], [0], marker='o', color='w', markerfacecolor='#1f77b4', markersize=14, label='F2\n(best/worst)'),
-    Line2D([0], [0], marker='o', color='w', markerfacecolor='#ff7f0e', markersize=14, label='Relative F2\n(best/worst)'),
-  ],
-  loc='upper center', bbox_to_anchor=(0.25, -0.25), ncol=2, frameon=False
+    handles=[f2_handle, f2s_handle],
+    handler_map={f2_handle: HandlerDotAlignFirstLine(),
+                 f2s_handle: HandlerDotAlignFirstLine()},
+    loc='upper center',
+    bbox_to_anchor=(0.25, -0.25),
+    ncol=2,
+    frameon=False,
+    handletextpad=0.5,  # reduce space between dot and text
+    borderpad=0.4,
+    columnspacing=1.0,
+    labelspacing=1.0
 )
 
 # Save and display
 plt.tight_layout()
 plt.savefig("../../results/graph/results_figure_a.png", dpi=300)
-plt.show()
+#plt.show()

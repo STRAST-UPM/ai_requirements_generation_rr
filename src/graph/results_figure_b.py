@@ -70,7 +70,7 @@ merged_r_low, merged_r_cmin, merged_r_cmax, merged_r_high = merge_extremes(
 )
 
 # Plotting
-fig, ax = plt.subplots(figsize=(12, 7.5))
+fig, ax = plt.subplots(figsize=(12, 7.7))
 
 def draw_boxes(ax, positions, low, cmin, cmax, high, box_color, label):
   for i, (pos, lo, cmn, cmx, hi) in enumerate(zip(positions, low, cmin, cmax, high)):
@@ -93,14 +93,11 @@ ax.plot(merged_right, merged_r_cmax, 'o', color=recall_center_color, markersize=
 
 # Legend setup
 legend_handles = [
-  Line2D([0], [0], color=precision_color, linewidth=8, label='Precision CI'),
-  Line2D([0], [0], color=recall_color, linewidth=8, label='Recall CI'),
-  (
-    Line2D([0], [0], marker='o', color='w', markerfacecolor=precision_center_color, markersize=9),
-    Line2D([0], [0], marker='o', color='w', markerfacecolor=recall_center_color, markersize=9)
-  )
+  Line2D([0], [0], marker='o', color='w', markerfacecolor=precision_center_color, markersize=11, label='Precision'),
+  Line2D([0], [0], marker='o', color='w', markerfacecolor=recall_center_color, markersize=11, label='Recall (best/worst)'),
+  Line2D([0], [0], color=precision_color, linewidth=8, label='CI (90%)'),
+  Line2D([0], [0], color=recall_color, linewidth=8, label='CI (90%)')
 ]
-
 
 ax.set_xticks(x)
 ax.set_xticklabels(labels, rotation=45)
@@ -116,14 +113,12 @@ ax.grid(which='minor', axis='y', linestyle='--', alpha=0.5)
 ax.grid(which='major', axis='y', linestyle='--', alpha=0.5)
 ax.legend(
   handles=legend_handles,
-  labels=['Precision CI', 'Recall CI', 'Best/worst'],
-  handler_map={legend_handles[2]: HandlerTuple(ndivide=None)},
   loc='upper center',
-  bbox_to_anchor=(0.5, -0.25),
-  ncol=3,
-  frameon=False
+  bbox_to_anchor=(0.33, -0.25),
+  ncol=2,
+  frameon=False,
+  handletextpad=0.35
 )
-
 
 plt.tight_layout()
 plt.savefig("../../results/graph/results_figure_b.png", dpi=300)
