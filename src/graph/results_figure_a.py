@@ -12,8 +12,8 @@ x = np.arange(len(labels))
 # F2 and F2-synthetic worst/best values
 f2_worst = np.array([0.45, 0.47, 0.31, 0.34, 0.57, 0.17, 0.31, 0.29, 0.19, 0.23, 0.28, 0.19, 0.19, 0.26, 0.20, 0.18])
 f2_best = np.array([0.45, 0.52, 0.36, 0.38, 0.58, 0.27, 0.35, 0.36, 0.23, 0.32, 0.35, 0.32, 0.30, 0.32, 0.23, 0.22])
-f2s_worst = np.array([1.00, 0.96, 0.79, 0.86, 0.76, 0.50, 0.76, 0.63, 0.64, 0.66, 0.75, 0.67, 0.57, 0.74, 0.59, 0.64])
-f2s_best = np.array([1.00, 0.98, 0.82, 0.88, 0.77, 0.56, 0.79, 0.66, 0.68, 0.72, 0.79, 0.78, 0.65, 0.78, 0.61, 0.69])
+f2s_worst = np.array([1.00, 1.01, 0.69, 0.76, 1.14, 0.39, 0.69, 0.63, 0.44, 0.53, 0.63, 0.44, 0.43, 0.60, 0.46, 0.41])
+f2s_best = np.array([1.00, 1.11, 0.81, 0.84, 1.16, 0.59, 0.77, 0.76, 0.54, 0.70, 0.77, 0.72, 0.66, 0.72, 0.52, 0.51])
 
 # Font config
 plt.rcParams.update({
@@ -46,11 +46,10 @@ ax.set_xticks(x)
 ax.set_xticklabels(labels, rotation=45)
 ax.set_ylabel('F2 score', ha='left', x=1.0)
 ax.set_xlabel('Model config.', ha='right', x=1.0)
-ax.set_ylim(0, 1.00)
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 
-ax.set_yticks(np.arange(0, 1.01, 0.2))
+ax.set_yticks(np.arange(0, 1.21, 0.2))
 ax.yaxis.set_minor_locator(MultipleLocator(0.1))
 ax.grid(which='minor', axis='y', linestyle='--', alpha=0.5)
 ax.grid(which='major', axis='y', linestyle='--', alpha=0.5)
