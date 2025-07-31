@@ -145,6 +145,9 @@ python main.py \
 - **Model access**  Some models (e.g., GPT‑4, Mistral) require API keys or specific access permissions. Ensure you have the necessary credentials before running the scripts.
 - **Environment**  The scripts are tested on Python 3.10+ with the dependencies listed in `requirements.txt`. Ensure your environment matches these specifications to avoid compatibility issues.
 
+> [!IMPORTANT]
+> Model selection references and rationale are documented in [doc/selection_of_models.md](doc/selection_of_models.md).
+
 ## Ethics and Intended Use
 
 This research is conducted under the principles of responsible AI. The generated requirements are intended for educational and research purposes only. Users must ensure compliance with local laws and ethical guidelines when applying these results in real-world scenarios.
