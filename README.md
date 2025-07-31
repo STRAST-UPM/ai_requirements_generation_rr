@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641295.svg)](https://zenodo.org/record/15641295)
 
-This repository accompanies the paper **“A Case Study on Cyber‑Security Requirement Elicitation: Leveraging Large‑Language‑Model Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
+This repository accompanies the paper **“Experimental Evaluation of AI-Augmented Cybersecurity Requirements Generation Leveraging LLMs Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
 
 ## Research Description
 
