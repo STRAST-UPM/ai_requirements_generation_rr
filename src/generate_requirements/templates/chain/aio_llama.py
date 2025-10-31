@@ -13,7 +13,7 @@ GENERATE_CHAIN = {
   "prompt": {
     "prompt_type": "plain",
     "template_files": [
-      ("plain", "generate-requirements/deprecated/llama3-template.txt")
+      ("plain", "generate-requirements/llama3/aio-plain-template.txt")
     ],
     "input_variables": ["domain_description", "input_requirement"],
     "output_key": "requirements_document"
