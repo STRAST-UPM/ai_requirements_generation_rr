@@ -76,21 +76,19 @@ GENERATE_CHAIN = {
 FORMAT_CHAIN = {
   "descriptor": "FORMAT_CHAIN",
   "endpoint": {
-    "provider": "huggingface",
-    "repo_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "provider": "aws-bedrock",
+    "model_id": "meta.llama3-1-405b-instruct-v1:0",
   },
   "parameters": {
     "top_p": 0.95,
     "temperature": 0.5,
-    "repetition_penalty": 1.03,
-    "timeout": 1500,
+    "max_gen_len": 2048,
     "verbose": False
   },
   "prompt": {
-    "prompt_type": "chat",
+    "prompt_type": "plain",
     "template_files": [
-      ("system", "format-json/llama3/system-template-v2.txt"),
-      ("human", "format-json/llama3/user-template-v2.txt")
+      ("plain", "format-json/llama3/plain-template-v2.txt")
     ],
     "input_variables": ["requirements_document"],
     "output_key": "requirements_list"
