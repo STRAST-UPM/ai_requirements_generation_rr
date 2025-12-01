@@ -36,3 +36,14 @@ This table provides a description for each of the model references used in the r
 | g2                | GPT-4, higher temperature                       |
 
 For the details of each model generation, including the hyperparameters used, the model version, and the date of execution, please refer to the `execution_details.md` files in (`doc/` directory). Each model generation has its own execution details file, which provides a comprehensive overview of the execution parameters and results.
+
+## Version History
+
+| Version | Date       | Change                                            |
+| ------- | ---------- | ------------------------------------------------- |
+| 1.0     | 2025‑06-30 | Initial public release matching paper submission. |
+| 2.0     | 2025‑12-01 | Second release including additional data files.   |
+
+---
+
+*Last updated : 2025‑12‑01*
