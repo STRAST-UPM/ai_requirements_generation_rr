@@ -159,6 +159,7 @@ Any use involving production compliance auditing, legal certification, or critic
 | Version | Date       | Highlights                                                  |
 | ------- | ---------- | ----------------------------------------------------------- |
 | 1.0     | 2025‑07-31 | Initial public release.                                     |
+| 2.0     | 2025‑12-01 | Second release including additional executions.             |
 
 ## License and Citation
 
@@ -172,11 +173,11 @@ If you use this repository in your research, please cite it as follows:
 ```bibtex
 @misc{llmsec2025iso,
   author={Yelmo, Juan Carlos and Martín, Yod-Samuel and Perez-Acuna, Santiago},
-  title={A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package},
+  title={Experimental Evaluation of AI-Augmented Cybersecurity Requirements Generation Leveraging LLMs’ Capabilities | Reproducible Research Package},
   year={2025},
   url={https://github.com/STRAST-UPM/ai_requirements_generation_rr},
   doi={10.5281/zenodo.15641295},
-  version={1.0},
+  version={2.0},
 }
 ```
 

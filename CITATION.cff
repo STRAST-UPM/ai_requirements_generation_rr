@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "A Case Study on AI-augmented Cybersecurity Requirements Generation leveraging LLMs Capabilities | Reproducible Research Package"
+title: "Experimental Evaluation of AI-Augmented Cybersecurity Requirements Generation Leveraging LLMs’ Capabilities | Reproducible Research Package"
 message: "Please cite this repository using the metadata from `preferred-citation` in CITATION.cff"
 type: data
 authors:
