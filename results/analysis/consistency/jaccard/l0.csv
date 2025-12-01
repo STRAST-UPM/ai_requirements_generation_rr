@@ -1,0 +1,9 @@
+Comparison,Inc_Intersec,Inc_Union,Inc_Jindex,Exc_Intersec,Exc_Union,Exc_Jindex
+L0_i vs L0_ii,26,46,0.565,24,40,0.600
+L0_i vs L0_iii,26,52,0.500,25,44,0.568
+L0_i vs L0_iv,29,41,0.707,28,39,0.718
+L0_ii vs L0_iii,29,45,0.644,27,34,0.794
+L0_ii vs L0_iv,27,39,0.692,26,33,0.788
+L0_iii vs L0_iv,29,43,0.674,28,36,0.778
+Mean (a),,,0.631,,,0.708
+Mean (g),,,0.626,,,0.701

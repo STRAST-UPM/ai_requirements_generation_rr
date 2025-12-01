@@ -1,22 +1,22 @@
-Q1.#,Present,Hallucination,Rationale
-Q1.1.1,Yes,,
-Q1.2.1,Yes,,
-Q1.3.1,Yes,,
-Q1.3.2,Yes,,
-Q1.3.3,Yes,,
-Q1.3.4,Yes,,
-Q1.3.5,Yes,,
-Q1.3.6,No,Yes,Out of scope
-Q1.3.7,No,Yes,Out of scope
-Q1.3.8,No,No,
-Q1.3.9,No,Yes,Unrelated
-Q1.4.1,Yes,,
-Q1.5.1,Yes,,
-Q1.6.1,Yes,,Includes irrelevant periodicity
-Q1.7.1,Yes,,
-Q1.8.1,Yes,,
-Q1.9.1,Yes,,
-Q1.10.1,Yes,,
-Q1.10.2,No,No,
-Q1.10.3,No,Yes,Unrelated
-Q1.10.4,No,Yes,Unrelated
+Q1.#,Present,Hallucination,Hall. Type,Rationale
+Q1.1.1,Yes,,,
+Q1.2.1,Yes,,,
+Q1.3.1,Yes,,,
+Q1.3.2,Yes,,,
+Q1.3.3,Yes,,,
+Q1.3.4,Yes,,,
+Q1.3.5,Yes,,,
+Q1.3.6,No,Yes,Scope misalignment,
+Q1.3.7,No,Yes,Scope misalignment,
+Q1.3.8,No,No,,
+Q1.3.9,No,Yes,Template drift,
+Q1.4.1,Yes,,,
+Q1.5.1,Yes,,,
+Q1.6.1,Yes,,,Includes irrelevant periodicity
+Q1.7.1,Yes,,,
+Q1.8.1,Yes,,,
+Q1.9.1,Yes,,,
+Q1.10.1,Yes,,,
+Q1.10.2,No,No,,
+Q1.10.3,No,Yes,Template drift,
+Q1.10.4,No,Yes,Template drift,

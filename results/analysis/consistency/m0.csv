@@ -1,0 +1,47 @@
+#,M0_i,M0_ii,M0_iii,M0_iv,Hallucination
+H.1.1,X,X,X,X,No
+M0.2.1; M0_ii.2.1; M0_iii.2.1,X,X,X,,Yes
+M0.2.2; M0_ii.2.3,X,X,,,Yes
+M0.2.3,X,,,,Yes
+M0.2.4,X,,,,Yes
+M0_ii.2.2,,X,,,Yes
+M0_ii.2.4,,X,,,Yes
+M0_ii.2.5,,X,,,Yes
+M0_iii.2.2,,,X,,Yes
+M0_iii.2.3,,,X,,Yes
+M0_iii.2.4,,,X,,Yes
+H.3.1,P,,P,P,No
+M0.3.4,X,,,,Yes
+M0_ii.3.1; M0_iii.3.1,,X,X,,Yes
+M0_ii.3.2; M0_iv.3.2,,X,,X,Yes
+M0_ii.3.3; M0_iv.3.3,,X,,X,Yes
+H.4.7,X,X,X,X,No
+GS.4.10,X,X,X,X,No
+GS.4.11,X,X,X,X,No
+GS.4.12,X,X,X,X,No
+GS.4.18,,,X,,No
+H.5.1,X,X,X,X,No
+GS.5.5,X,,,X,No
+M0.5.3; M0_iii.5.3,X,,X,,Yes
+H.6.1,X,X,X,X,No
+GS.6.3,X,,,,No
+H.7.1,P,P,P,P,No
+H.7.2,P,,,P,No
+GS.7.5,X,X,,,No
+H.8.1,X,X,X,X,No
+M0_ii.8.2; M0_iii.8.1,,X,X,,Yes
+M0_ii.8.3,,X,,,Yes
+M0_ii.8.4,,X,,,Yes
+M0_ii.8.5,,X,,,Yes
+M0_iii.8.3,,,X,,Yes
+M0_iv.8.1,,,,X,Yes
+M0_iv.8.2,,,,X,Yes
+H.9.1,X,X,P,X,No
+H.9.2,P,,,,No
+H.9.3,X,X,X,X,No
+H.10.1,X,X,X,X,No
+H.10.2,X,X,X,,No
+H.10.3,P,P,,,No
+GS.10.6,X,,,,No
+GS.10.9,X,,,,No
+GS.10.10,X,,,,No

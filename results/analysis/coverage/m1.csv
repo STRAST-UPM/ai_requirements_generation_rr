@@ -1,34 +1,34 @@
-M1.#,Present,Hallucination,Rationale
-M1.1.1,Yes,,
-M1.2.1,Yes,,
-M1.2.2,Yes,,
-M1.2.3,Yes,,
-M1.2.4,Yes,,
-M1.3.1,Yes,,
-M1.3.2,Yes,,
-M1.3.3,Yes,,
-M1.3.4,No,No,
-M1.3.5,No,No,
-M1.4.1,Yes,,
-M1.4.2,Yes,,
-M1.4.3,Yes,,
-M1.4.4,Yes,,
-M1.5.1,Yes,,
-M1.5.2,Yes,,
-M1.6.1,Yes,,
-M1.7.1,No,No,
-M1.7.2,Yes,,
-M1.7.3,Yes,,
-M1.7.4,Yes,,
-M1.8.1,Yes,,
-M1.8.2,No,Yes,Extreme measures
-M1.8.3,No,Yes,Extreme measures
-M1.8.4,No,Yes,Extreme measures
-M1.9.1,Yes,,
-M1.9.2,Yes,,
-M1.9.3,Yes,,
-M1.10.1,Yes,,
-M1.10.2,No,Yes,Absurd
-M1.10.3,No,Yes,Absurd
-M1.10.4,No,Yes,Absurd
-M1.10.5,No,Yes,Absurd
+M1.#,Present,Hallucination,Hall. Type,Rationale
+M1.1.1,Yes,,,
+M1.2.1,Yes,,,
+M1.2.2,Yes,,,
+M1.2.3,Yes,,,
+M1.2.4,Yes,,,
+M1.3.1,Yes,,,
+M1.3.2,Yes,,,
+M1.3.3,Yes,,,
+M1.3.4,No,No,,
+M1.3.5,No,No,,
+M1.4.1,Yes,,,
+M1.4.2,Yes,,,
+M1.4.3,Yes,,,
+M1.4.4,Yes,,,
+M1.5.1,Yes,,,
+M1.5.2,Yes,,,
+M1.6.1,Yes,,,
+M1.7.1,No,No,,
+M1.7.2,Yes,,,
+M1.7.3,Yes,,,
+M1.7.4,Yes,,,
+M1.8.1,Yes,,,
+M1.8.2,No,Yes,Architectural infeasibility,Extreme measures
+M1.8.3,No,Yes,Architectural infeasibility,Extreme measures
+M1.8.4,No,Yes,Architectural infeasibility,Extreme measures
+M1.9.1,Yes,,,
+M1.9.2,Yes,,,
+M1.9.3,Yes,,,
+M1.10.1,Yes,,,
+M1.10.2,No,Yes,Architectural infeasibility,Absurd
+M1.10.3,No,Yes,Architectural infeasibility,Absurd
+M1.10.4,No,Yes,Architectural infeasibility,Absurd
+M1.10.5,No,Yes,Architectural infeasibility,Absurd

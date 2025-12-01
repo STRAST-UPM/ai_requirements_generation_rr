@@ -13,14 +13,14 @@ This datasheet documents the provenance, structure, and intended use of the arte
 
 | Sub‑folder                         | Content                                                                       | Instances / Files | Size     | Notes                                             |
 | ---------------------------------- | ----------------------------------------------------------------------------- | ----------------- | -------- | ------------------------------------------------- |
-| `requirements/`                    | JSON or Markdown requirement lists for each run (human and 15 model configs). | 16 files          | \~997 KB | `h_requirements.md` is the expert baseline.       |
-| `analysis/coverage/`               | Model requirement presence in human baseline [Present, Hallucination, Rationale].                                   | 16 CSV            | \~14 KB  | One row per model generated requirement.                           |
-| `analysis/relations/completeness/` | CSV tables indicating model-generated related requirements for each requirement of the human baseline.        | 15 CSV          | \~8.5 KB  |  |
-| `analysis/relations/support/`      | CSV tables indicating human-generated related requirements for each requirement of the model generation.        | 15 CSV          | \~8.7 KB  |  |
-| `analysis/consistency.csv`         | Jaccard index analysis across repeated runs.                                         | 1 CSV             | 1 KB     |                |
-| `analysis/summary.csv`             | Precision, recall, F2, F2‑synthetic and other key metrics extracted from the raw data.                                          | 1 CSV             | 5.2 KB     |              |
-| `analysis/gold_standard.csv`       | De‑duplicated union of all positives.                                    | 1 CSV             | 7 KB     | 75 requirements.                                  |
-| `graph/`                           | PNG figures A & B.                                                            | 2 PNG             | 334 KB   | Regenerated via `src/graph/*.py`.                 |
+| `requirements/`                    | JSON or Markdown requirement lists for each run (human and 15 model configs). | 30 files          | \~1.9 MB | `h_requirements.md` is the expert baseline.       |
+| `analysis/coverage/`               | Model requirement presence in human baseline [Present, Hallucination, Rationale].                                   | 30 CSV            | 30.6 KB  | One row per model generated requirement.                           |
+| `analysis/relations/completeness/` | CSV tables indicating model-generated related requirements for each requirement of the human baseline.        | 29 CSV          | 17.6 KB  |  |
+| `analysis/relations/support/`      | CSV tables indicating human-generated related requirements for each requirement of the model generation.        | 29 CSV          | 18.1 KB  |  |
+| `analysis/consistency.csv`         | Jaccard index analysis across repeated runs and inter-model, including raw data and summaries                                         | 12 CSV             | 16.7 KB     |                |
+| `analysis/summary.csv`             | Precision, recall, F2, relative F2 and other key metrics extracted from the raw data.                                          | 1 CSV             | 5.9 KB     |              |
+| `analysis/gold_standard.csv`       | De‑duplicated union of all positives.                                    | 1 CSV             | 12 KB     | 76 requirements.                                  |
+| `graph/`                           | PNG figures A & B.                                                            | 2 PNG             | 569 KB   | Regenerated via `src/graph/*.py`.                 |
 
 ## Data Generation Process
 
@@ -51,7 +51,8 @@ The result files are distributed under **CC‑BY‑4.0**. You may remix, adapt a
 | Version | Date       | Change                                            |
 | ------- | ---------- | ------------------------------------------------- |
 | 1.0     | 2025‑06-30 | Initial public release matching paper submission. |
+| 2.0     | 2025‑12-01 | Second release including additional executions.   |
 
 ---
 
-*Last updated : 2025‑06‑10*
+*Last updated : 2025‑12‑01*

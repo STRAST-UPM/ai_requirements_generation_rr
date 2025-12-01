@@ -1,0 +1,9 @@
+Comparison,Inc_Intersec,Inc_Union,Inc_Jindex,Exc_Intersec,Exc_Union,Exc_Jindex
+Q0_i vs Q0_ii,19,47,0.404,19,28,0.679
+Q0_i vs Q0_iii,21,51,0.412,21,27,0.778
+Q0_i vs Q0_iv,21,47,0.447,21,29,0.724
+Q0_ii vs Q0_iii,24,38,0.632,22,25,0.880
+Q0_ii vs Q0_iv,23,35,0.657,22,27,0.815
+Q0_iii vs Q0_iv,24,40,0.600,23,27,0.852
+Mean (a),,,0.525,,,0.788
+Mean (g),,,0.514,,,0.785

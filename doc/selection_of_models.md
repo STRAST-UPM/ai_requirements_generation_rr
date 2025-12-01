@@ -32,3 +32,14 @@ The following table summarizes model identifiers and performance metrics as repo
 
 \* Open LLM Leaderboard score for **Meta/LLaMa-3.1-405B-Instruct-v1.0** is taken from **Meta-Llama-3.1-70B-Instruct**.  
 \* HELM Capabilities mean score for **Qwen2-72B-Instruct** is taken from **Qwen2.5 Instruct Turbo (72B)**.
+
+## Version History
+
+| Version | Date       | Change                                            |
+| ------- | ---------- | ------------------------------------------------- |
+| 1.0     | 2025‑06-30 | Initial public release matching paper submission. |
+| 2.0     | 2025‑12-01 | Second release including additional executions.   |
+
+---
+
+*Last updated : 2025‑12‑01*

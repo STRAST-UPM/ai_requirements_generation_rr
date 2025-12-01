@@ -1,30 +1,30 @@
-G1.#,Present,Hallucination,Rationale
-G1.1.1,Yes,,
-G1.2.1,Yes,,
-G1.2.2,Yes,,
-G1.3.1,Yes,,
-G1.3.2,Yes,,Partial hall
-G1.3.3,No,No,
-G1.3.4,No,Yes,Unrelated
-G1.3.5,No,Yes,Unrelated
-G1.4.1,Yes,,
-G1.4.2,Yes,,Partial hall
-G1.4.3,No,Yes,Unrelated
-G1.5.1,Yes,,
-G1.5.2,No,Yes,Unrelated
-G1.5.3,No,No,
-G1.6.1,Yes,,
-G1.6.2,Yes,,
-G1.6.3,Yes,,
-G1.7.1,Yes,,
-G1.7.2,Yes,,
-G1.7.3,Yes,,
-G1.8.1,Yes,,Rambles
-G1.9.1,Yes,,
-G1.9.2,No,Yes,Absurd
-G1.9.3,Yes,,
-G1.9.4,Yes,,
-G1.10.1,No,Yes,Not the keys for that; rambles
-G1.10.2,No,Yes,Unrelated
-G1.10.3,No,Yes,Absurd
-G1.10.4,Yes,,
+G1.#,Present,Hallucination,Hall. Type,Rationale
+G1.1.1,Yes,,,
+G1.2.1,Yes,,,
+G1.2.2,Yes,,,
+G1.3.1,Yes,,,
+G1.3.2,Yes,,,
+G1.3.3,No,No,,
+G1.3.4,No,Yes,Template drift,Unrelated
+G1.3.5,No,Yes,Template drift,Unrelated
+G1.4.1,Yes,,,
+G1.4.2,Partial,Yes,Contextual misfit,Partial hall
+G1.4.3,No,Yes,Template drift,Unrelated
+G1.5.1,Yes,,,
+G1.5.2,No,Yes,Template drift,Unrelated
+G1.5.3,No,No,,
+G1.6.1,Yes,,,
+G1.6.2,Yes,,,
+G1.6.3,Yes,,,
+G1.7.1,Yes,,,
+G1.7.2,Yes,,,
+G1.7.3,Yes,,,
+G1.8.1,Yes,,,Rambles
+G1.9.1,Yes,,,
+G1.9.2,No,Yes,Architectural infeasibility,Absurd
+G1.9.3,Yes,,,
+G1.9.4,Yes,,,
+G1.10.1,No,Yes,Architectural infeasibility,Not the keys for that; rambles
+G1.10.2,No,Yes,Template drift,Unrelated
+G1.10.3,No,Yes,Architectural infeasibility,Absurd
+G1.10.4,Yes,,,
