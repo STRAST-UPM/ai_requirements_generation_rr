@@ -14,8 +14,8 @@ This datasheet follows the structure proposed by **Gebru et al. (2021) *“D
 | File                             | Instances     | Size      | Content                                                                                                            |
 | -------------------------------- | ------------- | --------- | ------------------------------------------------------------------------------------------------------------------ |
 | `ai4i4.md`                       | 1 document    | 33.8 KB   | Functional & domain specification of the AI4I4 pilot system.                                                       |
-| `annotated_standard_subset.json` | 10 clauses    | 1.8 KB    | ISO‑27002 clauses selection with parameter placeholders (`{…}`).                                            |
-| `annotated_standard.json`        | 54 clauses    | 8.6 KB    | ISO‑27002 clauses extended selection with parameter placeholders (`{…}`).                                            |
+| `annotated_standard_subset.json` | 10 control definitions    | 1.8 KB    | ISO‑27002 control definitions selection with parameter placeholders (`{…}`).                                            |
+| `annotated_standard.json`        | 54 control definitions    | 8.6 KB    | ISO‑27002 control definitions extended selection with parameter placeholders (`{…}`).                                            |
 | `prompt/**`                      | 184 templates |  ≈ 201 KB | System / user prompts grouped by task (`check‑applicability`, `search‑domain‑elements`, etc.) and by model family. |
 
 ## Collection and Annotation Process
@@ -44,14 +44,15 @@ This datasheet follows the structure proposed by **Gebru et al. (2021) *“D
 ## Distribution & Licensing
 
 * **Data licence** Creative Commons BY‑4.0 for annotations and metadata.
-* **ISO text** © ISO. Only restructured requirements provided; users must hold an ISO licence to reconstruct full clauses.
+* **ISO text** © ISO. Only restructured requirements provided; users must hold an ISO licence to reconstruct full control definitions.
 
 ## Version History
 
 | Version | Date       | Change                                            |
 | ------- | ---------- | ------------------------------------------------- |
 | 1.0     | 2025‑06-30 | Initial public release.                           |
+| 2.1     | 2025‑12-03 | Terminology fixes.                                          |
 
 ---
 
-*Last updated : 2025‑07-31*
+*Last updated : 2025‑12-03*

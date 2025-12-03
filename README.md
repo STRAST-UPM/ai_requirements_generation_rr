@@ -10,7 +10,7 @@ This project investigates the practical use of state‑of‑the‑art Large Lang
 
 Key contributions include:
 
-1. **Annotated benchmark** of 54 ISO‑27002 clauses with placeholder semantics suitable for automatic instantiation.
+1. **Annotated benchmark** of 54 ISO‑27002 control definitions with placeholder semantics suitable for automatic instantiation.
 2. **LangChain pipelines** that decompose the task into applicability filtering, domain‑element search, requirement generation, and JSON formatting.
 3. **Comprehensive evaluation** of accuracy (precision, recall, F2), creativity (F2‑synthetic), and consistency (Jaccard overlap across runs).
 4. **Prompt library** enumerating >180 templates, showing how subtle changes in instruction design affect hallucination rate and coverage.
@@ -23,7 +23,7 @@ The artefacts and scripts below allow full replication—from raw prompts to fin
 .
 ├── data/                  # Experimental inputs
 │   ├── ai4i4.md           # Functional specification of the AI4I4 case study
-│   ├── annotated_standard_subset.json   # Annotated subset of ISO‑27002 clauses
+│   ├── annotated_standard_subset.json   # Annotated subset of ISO‑27002 control definitions
 │   └── prompt/            # Prompt templates organised by task and model
 ├── src/                   # LangChain pipelines and helper scripts
 │   ├── generate_requirements/  # End‑to‑end automation
@@ -160,6 +160,7 @@ Any use involving production compliance auditing, legal certification, or critic
 | ------- | ---------- | ----------------------------------------------------------- |
 | 1.0     | 2025‑07-31 | Initial public release.                                     |
 | 2.0     | 2025‑12-01 | Second release including additional executions.             |
+| 2.1     | 2025‑12-03 | Terminology fixes.                                          |
 
 ## License and Citation
 
@@ -191,4 +192,4 @@ Santiago Pérez Acuña - [santiago.perez.acuna@upm.es](mailto:santiago.perez.acu
 
 ---
 
-*Last updated : 2025‑07-31*
+*Last updated : 2025‑12-03*
