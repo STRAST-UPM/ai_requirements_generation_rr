@@ -6,7 +6,7 @@ This repository accompanies the paper **“Experimental Evaluation of AI-Augment
 
 ## Research Description
 
-This project investigates the practical use of state‑of‑the‑art Large Language Models (LLMs) to transform high‑level, standard‑driven cyber‑security controls into concrete, system‑specific requirements.  Using a synthetic yet industrially plausible case study—AI4I4, an IoT‑enabled automotive logistics platform—we benchmark thirteen frontier models (GPT‑4, LLaMa 3, Mistral, QWen, etc.), representing tge state of the art as of September 2024, across four prompting pipelines and three temperature regimes.
+This project investigates the practical use of state‑of‑the‑art Large Language Models (LLMs) to transform high‑level, standard‑driven cyber‑security controls into concrete, system‑specific requirements.  Using a synthetic yet industrially plausible case study—AI4I4, an IoT‑enabled automotive logistics platform—we benchmark thirteen frontier models (GPT‑4, LLaMa 3, Mixtral, QWen, etc.), representing tge state of the art as of September 2024, across four prompting pipelines and three temperature regimes.
 
 Key contributions include:
 

@@ -22,12 +22,12 @@ This table provides a description for each of the model references used in the r
 | q0_iv             | QWen, optimal hyperparameters (4th execution)   |
 | q1                | QWen, lower temperature                         |
 | q2                | QWen, higher temperature                        |
-| m0                | Mistral, optimal hyperparameters                |
-| m0_ii             | Mistral, optimal hyperparameters (2nd execution)|
-| m0_iii            | Mistral, optimal hyperparameters (3rd execution)|
-| m0_iv             | Mistral, optimal hyperparameters (4th execution)|
-| m1                | Mistral, lower temperature                      |
-| m2                | Mistral, higher temperature                     |
+| m0                | Mixtral, optimal hyperparameters                |
+| m0_ii             | Mixtral, optimal hyperparameters (2nd execution)|
+| m0_iii            | Mixtral, optimal hyperparameters (3rd execution)|
+| m0_iv             | Mixtral, optimal hyperparameters (4th execution)|
+| m1                | Mixtral, lower temperature                      |
+| m2                | Mixtral, higher temperature                     |
 | g0                | GPT-4, optimal hyperparameters                  |
 | g0_ii             | GPT-4, optimal hyperparameters (2nd execution)  |
 | g0_iii            | GPT-4, optimal hyperparameters (3rd execution)  |
