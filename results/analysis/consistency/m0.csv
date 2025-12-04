@@ -1,5 +1,6 @@
 #,M0_i,M0_ii,M0_iii,M0_iv,Hallucination
 H.1.1,X,X,X,X,No
+H.2.1,,,,X,No
 M0.2.1; M0_ii.2.1; M0_iii.2.1,X,X,X,,Yes
 M0.2.2; M0_ii.2.3,X,X,,,Yes
 M0.2.3,X,,,,Yes
