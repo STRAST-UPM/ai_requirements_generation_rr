@@ -1,10 +1,11 @@
 #,M0_i,M0_ii,M0_iii,M0_iv,Hallucination
 H.1.1,X,X,X,X,No
 H.2.1,,,,X,No
+GS.2.3,,,,X,No
 M0.2.1; M0_ii.2.1; M0_iii.2.1,X,X,X,,Yes
 M0.2.2; M0_ii.2.3,X,X,,,Yes
 M0.2.3,X,,,,Yes
-M0.2.4,X,,,,Yes
+M0.2.4; M0_iii.2.5,X,,X,,Yes
 M0_ii.2.2,,X,,,Yes
 M0_ii.2.4,,X,,,Yes
 M0_ii.2.5,,X,,,Yes
@@ -21,6 +22,7 @@ GS.4.10,X,X,X,X,No
 GS.4.11,X,X,X,X,No
 GS.4.12,X,X,X,X,No
 GS.4.18,,,X,,No
+M0_iii.4.2,,,X,,Yes
 H.5.1,X,X,X,X,No
 GS.5.5,X,,,X,No
 M0.5.3; M0_iii.5.3,X,,X,,Yes
@@ -29,6 +31,11 @@ GS.6.3,X,,,,No
 H.7.1,P,P,P,P,No
 H.7.2,P,,,P,No
 GS.7.5,X,X,,,No
+M0_ii.7.1,,X,,,Yes
+M0_ii.7.4,,X,,,Yes
+M0_ii.7.5,,X,,,Yes
+M0_iv.7.3,,,,X,Yes
+M0_iv.7.5,,,,X,Yes
 H.8.1,X,X,X,X,No
 M0_ii.8.2; M0_iii.8.1,,X,X,,Yes
 M0_ii.8.3,,X,,,Yes

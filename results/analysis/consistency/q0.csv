@@ -2,7 +2,7 @@
 H.1.1,X,X,X,X,No
 H.1.2,,,,P,No
 H.2.1,P,X,X,P,No
-Q0_iii.2.4,,,,X,Yes
+Q0_iii.2.4,,,X,,Yes
 H.3.1,P,X,X,P,No
 H.3.4,X,X,X,P,No
 GS.3.6,X,,,,No
@@ -30,7 +30,7 @@ GS.4.18,,,,X,No
 Q0.4.2,X,,,,Yes
 Q0.4.7,X,,,,Yes
 Q0.4.11,X,,,,Yes
-Q0.4.12,,,,X,Yes
+Q0.4.12,X,,,,Yes
 Q0_ii.4.2,,X,,,Yes
 Q0_iii.4.3,,,X,,Yes
 Q0_iii.4.4,,,X,,Yes
