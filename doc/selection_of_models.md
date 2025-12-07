@@ -6,9 +6,9 @@ Our model selection was based primarily on a snapshot of the **Hugging Face Open
 
 We further cross-referenced performance metrics from additional public leaderboards to ensure robustness and traceability, including:  
 
-- **[Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/?pinned=Qwen%2FQwen2-72B-Instruct_bfloat16_1af63c698f59c4235668ec9c1395468cb7cd7e79%2Cmeta-llama%2FLlama-3.1-70B-Instruct_bfloat16_b9461463b511ed3c0762467538ea32cf7c9669f2_True%2CQwen%2FQwen2-72B-Instruct_bfloat16_1af63c698f59c4235668ec9c1395468cb7cd7e79_False%2Cmistralai%2FMixtral-8x22B-Instruct-v0.1_bfloat16_b0c3516041d014f640267b14feb4e9a84c8e8c71_True&columns=rank%2Cmodel.type_icon%2Cid%2Cmodel.average_score%2Cevaluations.musr.normalized_score%2Cevaluations.mmlu_pro.normalized_score%2Cmetadata.upload_date%2Cmetadata.submission_date%2Cfeatures.is_highlighted_by_maintainer%2Cevaluations.ifeval.normalized_score%2Cevaluations.bbh.normalized_score%2Cevaluations.gpqa.normalized_score%2Cmetadata.hub_hearts%2Cmetadata.base_model%2Cfeatures.is_official_provider%2Cmodel.architecture%2Cfeatures.is_moe&averageMode=visible&rankingMode=dynamic&official=true&types=chat%2Cmerge)** (by *open-llm-leaderboard*): Sept. 15th, 2024 snapshot, from commit `2f9a8f919661132e2f904c3ac59810facd94c4d7`, including only chat and merge model types from official providers.
-- **[LMArena Leaderboard](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard)** (by *lmarena-ai*, also known as *[Text Arena | LMArena](https://lmarena.ai/leaderboard/text)*): Sept. 15th, 2024 snapshot (`elo_results_20240915.pkl`), including all available models.
-- **[HELM (Holistic Evaluation of Language Models)](https://crfm.stanford.edu/helm/capabilities/latest/#/leaderboard)** capabilities benchmark: Mar. 20th, 2025 snapshot (first release), including all available models.
+- **[Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/?pinned=Qwen%2FQwen2-72B-Instruct_bfloat16_1af63c698f59c4235668ec9c1395468cb7cd7e79%2Cmeta-llama%2FLlama-3.1-70B-Instruct_bfloat16_b9461463b511ed3c0762467538ea32cf7c9669f2_True%2CQwen%2FQwen2-72B-Instruct_bfloat16_1af63c698f59c4235668ec9c1395468cb7cd7e79_False%2Cmistralai%2FMixtral-8x22B-Instruct-v0.1_bfloat16_b0c3516041d014f640267b14feb4e9a84c8e8c71_True&columns=rank%2Cmodel.type_icon%2Cid%2Cmodel.average_score%2Cevaluations.musr.normalized_score%2Cevaluations.mmlu_pro.normalized_score%2Cmetadata.upload_date%2Cmetadata.submission_date%2Cfeatures.is_highlighted_by_maintainer%2Cevaluations.ifeval.normalized_score%2Cevaluations.bbh.normalized_score%2Cevaluations.gpqa.normalized_score%2Cmetadata.hub_hearts%2Cmetadata.base_model%2Cfeatures.is_official_provider%2Cmodel.architecture%2Cfeatures.is_moe&averageMode=visible&rankingMode=dynamic&official=true&types=chat%2Cmerge)** (by *open-llm-leaderboard*): Sept. 15th, 2024 snapshot, from commit[ `2f9a8f919661132e2f904c3ac59810facd94c4d7`](https://huggingface.co/datasets/open-llm-leaderboard/contents/tree/2f9a8f919661132e2f904c3ac59810facd94c4d7), including only chat and merge model types from official providers.
+- **[LMArena Leaderboard](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard)** (by *lmarena-ai*, also known as *[Text Arena | LMArena](https://lmarena.ai/leaderboard/text)*): Sept. 15th, 2024 snapshot ([`elo_results_20240915.pkl`](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard/blob/main/elo_results_20240915.pkl)), including all available models.
+- **[HELM (Holistic Evaluation of Language Models)](https://crfm.stanford.edu/helm/capabilities/latest/#/leaderboard)** capabilities benchmark: Mar. 20th, 2025 [snapshot](https://crfm.stanford.edu/helm/capabilities/v1.0.0/#/leaderboard) (first release), including all available models.
 
 ## Selected Models
 
@@ -39,7 +39,8 @@ The following table summarizes model identifiers and performance metrics as repo
 | ------- | ---------- | ------------------------------------------------- |
 | 1.0     | 2025‑06-30 | Initial public release matching paper submission. |
 | 2.0     | 2025‑12-01 | Second release including additional executions.   |
+| 2.1     | 2025‑12‑07 | Include snapshot links.                           |
 
 ---
 
-*Last updated : 2025‑12‑01*
+*Last updated : 2025‑12‑07*
