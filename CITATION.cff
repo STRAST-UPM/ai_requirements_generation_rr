@@ -17,7 +17,7 @@ authors:
     affiliation: "Universidad Politécnica de Madrid"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.15641295
+    value: 10.5281/zenodo.15641294
     description: "Zenodo"
 license:
   - spdx: LicenseRef-Proprietary

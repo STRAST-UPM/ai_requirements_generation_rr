@@ -1,6 +1,6 @@
 # AI-augmented Cybersecurity Requirements Generation using LLMs | Reproducible Research Package
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641295.svg)](https://zenodo.org/record/15641295)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641294.svg)](https://zenodo.org/record/15641294)
 
 This repository accompanies the paper **“Experimental Evaluation of AI-Augmented Cybersecurity Requirements Generation Leveraging LLMs’ Capabilities.”** It contains every script, dataset, prompt template and result needed to fully reproduce our empirical study.
 
@@ -177,7 +177,7 @@ If you use this repository in your research, please cite it as follows:
   title={Experimental Evaluation of AI-Augmented Cybersecurity Requirements Generation Leveraging LLMs’ Capabilities | Reproducible Research Package},
   year={2025},
   url={https://github.com/STRAST-UPM/ai_requirements_generation_rr},
-  doi={10.5281/zenodo.15641295},
+  doi={10.5281/zenodo.15641294},
   version={2.0},
 }
 ```
