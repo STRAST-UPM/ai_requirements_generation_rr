@@ -36,7 +36,7 @@ def main():
 
     r_grid = np.linspace(0.001, 1.0, 500)
 
-    for f_target in np.arange(0.6, 1.01, 0.1):
+    for f_target in np.arange(0.1, 1.01, 0.05):
         denom = coef * r_grid - beta2 * f_target
         p_grid = f_target * r_grid / denom
 
