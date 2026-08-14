@@ -54,7 +54,7 @@ GS.7.9,None,None,None,L0_iii.7.6,None,None,None,L3.7.5,None,None,None,None,None,
 GS.7.10,None,None,None,None,None,None,None,L3.7.6,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.7.11,None,None,None,None,None,None,None,None,L4.7.1,L5.7.1,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.8.1,H.8.1,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
-GS.8.2,None,L0.8.2,L0_ii_8.1,L0_iii.8.3,L0_iv.8.2,None,None,L3.8.2,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
+GS.8.2,None,L0.8.2,L0_ii.8.1,L0_iii.8.3,L0_iv.8.2,None,None,L3.8.2,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.8.3,None,None,None,None,None,None,None,L3.8.4,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.9.1,H.9.1,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.9.2,H.9.2,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
