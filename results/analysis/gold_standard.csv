@@ -38,6 +38,7 @@ GS.5.3,None,L0.5.2,L0_ii.5.1,L0_iii.5.1,L0_iv.5.1,L1.5.3,L2.5.3,L3.5.3,None,None
 GS.5.4,None,None,None,None,None,None,L2.5.2,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.5.5,None,None,None,None,None,None,None,L3.5.2,None,None,None,None,None,None,None,None,M0.5.2,None,None,M0_iv.5.2,None,None,None,None,None,None,None,None
 GS.5.6,None,None,None,None,None,None,None,None,L4.5.1,L5.5.2,None,Q0_ii.5.2,Q0_iii.5.2,None,None,None,None,None,None,None,None,None,None,None,G0_iii.5.3,None,G1.5.3,None
+GS.5.7,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,G0_iii.5.4,None,None,None
 GS.6.1,H.6.1,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.6.2,None,L0.6.2,L0_ii.6.2,L0_iii.6.1; L0_iii.6.2; L0_iii.6.3,L0_iv.6.1; L0_iv.6.2; L0_iv.6.3,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.6.3,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,M0.6.2,None,None,None,None,None,None,None,None,None,None,None
@@ -75,3 +76,4 @@ GS.10.8,None,None,None,None,None,None,None,None,None,L5.10.3,None,None,None,None
 GS.10.9,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,M0.10.3p,None,None,None,None,None,None,None,None,None,None,None
 GS.10.10,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,M0.10.5,None,None,None,None,None,None,None,None,None,None,None
 GS.10.11,None,L0.10.1,L0_ii.10.2; L0_ii.10.3; L0_ii.10.4; L0_ii.10.5; L0_ii.10.6,L0_iii.10.1,L0_iv.10.1,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
+GS.10.12,None,None,None,L0_iii.10.3,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
