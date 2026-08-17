@@ -62,7 +62,7 @@ GS.9.2,H.9.2,None,None,None,None,None,None,None,None,None,None,None,None,None,No
 GS.9.3,H.9.3,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.9.4,None,L0.9.4,L0_ii.9.1,L0_iii.9.2,L0_iv.9.1,None,None,L3.9.12,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
 GS.9.5,None,None,None,None,None,None,L2.9.3,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
-GS.9.6,None,None,None,None,None,None,None,L3.9.11,None,L5.9.5,None,None,None,None,None,Q2.9.1,None,None,None,None,None,M2.9.2,G0.9.2,G0_ii.9.1,G0_iii.9.3,G0_iv.9.3,None,None
+GS.9.6,None,None,None,None,None,None,None,L3.9.11,None,L5.9.5,None,None,None,None,None,Q2.9.1; Q2.9.6,None,None,None,None,None,M2.9.2,G0.9.2,G0_ii.9.1,G0_iii.9.3,G0_iv.9.3,None,None
 GS.9.7,None,None,None,None,None,None,None,L3.9.7,None,None,None,None,None,None,None,Q2.9.5,None,None,None,None,None,None,None,None,None,None,None,None
 GS.9.8,None,None,L0_ii.9.3,L0_iii.9.3,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,G0.9.3,None,None,None,None,None
 GS.10.1,H.10.1,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
