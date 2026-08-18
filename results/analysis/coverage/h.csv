@@ -9,7 +9,7 @@ H.3.3,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,
 H.3.4,No,Yes,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Partial,No,No,No,No,No,No,No,No,No,No,No,Partial,No,No,No,No
 H.3.5,Yes,Yes,Yes,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
 H.4.1,Yes,Yes,Yes,Partial,Yes,Yes,Yes,Yes,No,Yes,Partial,Partial,Partial,No,Partial,No,No,No,No,Partial,Partial,No,No,No,No,No,No,Partial,Partial
-H.4.2,Yes,Yes,Yes,Partial,Yes,Yes,Yes,Yes,Yes,No,Partial,Partial,Partial,No,No,No,No,No,No,Partial,Partial,No,No,No,No,No,No,Partial,Partial
+H.4.2,Yes,Yes,Yes,Partial,Yes,Yes,Yes,Yes,Yes,Partial,Partial,Partial,Partial,No,No,No,No,No,No,Partial,Partial,No,No,No,No,No,No,Partial,Partial
 H.4.3,Yes,Yes,Yes,Partial,No,Yes,Yes,Yes,Yes,Partial,Partial,Partial,Partial,No,Partial,No,No,No,No,Partial,Partial,No,No,No,No,No,No,Partial,Partial
 H.4.4,Yes,No,No,No,No,No,Yes,No,No,Yes,No,Partial,Partial,No,No,No,No,No,No,Partial,Partial,No,No,No,No,No,No,No,No
 H.4.5,Yes,Yes,Yes,Partial,Yes,Yes,Yes,Yes,Yes,Yes,No,Partial,Partial,No,Partial,No,No,No,No,Partial,Partial,No,No,No,No,Yes,No,No,No
@@ -21,7 +21,7 @@ H.5.2,Partial,Partial,Partial,Partial,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,
 H.6.1,Yes,Yes,Partial,Partial,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Partial,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
 H.7.1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Partial,No,Partial,Partial,Partial,Partial,Partial,Partial,Partial,Partial,Partial,Partial,Partial,Partial,Yes,Yes,Yes,Yes,Yes,Partial,Yes,Yes
 H.7.2,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,Partial,No,No,Partial,Partial,Partial,Yes,No,Yes,Yes,No,No,No,No
-H.7.3,No,No,Yes,Yes,No,Yes,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No
+H.7.3,No,No,Yes,Yes,Partial,Yes,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No
 H.8.1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
 H.9.1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Partial,No,Yes,Yes,Partial,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Partial
 H.9.2,Yes,Yes,No,Partial,No,No,Yes,Partial,No,Yes,No,No,No,No,No,Partial,No,No,No,No,No,No,No,No,No,No,No,No,No
