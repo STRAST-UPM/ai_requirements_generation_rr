@@ -5,12 +5,13 @@ G0.2.2,X,,,,Yes
 G0_iii.2.3,,,X,,Yes
 H.3.1,X,X,X,X,No
 H.3.2,,,,X,No
-H.3.4,X,X,,P,No
+H.3.3,X,X,,,No
+H.3.4,,,,P,No
 GS.3.6,,,X,,No
 G0_iii.3.2,,,X,,Yes
 G0_iv.3.3,,,,X,Yes
 H.4.7,,X,X,P,No
-H.4.8,P,P,,,No
+H.4.8,,P,,,No
 GS.4.19,X,,X,X,No
 G0.4.1,X,,,,Yes
 G0.4.2,X,,,,Yes
@@ -25,8 +26,8 @@ H.6.1,X,X,X,X,No
 GS.6.4,X,,X,,No
 G0.6.3,X,,,,Yes
 H.7.1,X,X,X,X,No
-H.7.2,X,X,X,X,No
-H.7.3,X,,X,X,No
+H.7.2,X,,X,X,No
+H.7.3,X,X,X,X,No
 H.8.1,X,X,X,X,No
 H.9.1,X,X,X,X,No
 H.9.3,X,X,X,X,No
