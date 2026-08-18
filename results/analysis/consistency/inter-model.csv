@@ -89,8 +89,8 @@ GS.6.4,No,,,,,,,,,,,,,,,,X,,X,,X
 L0_ii.6.2,Yes,,X,,,X,,,,,,,,,,,,,,,
 G0.6.3,Yes,,,,,,,,,,,,,,,,X,,,,X
 GS.7.1,No,X,X,X,X,X,P,P,P,P,X,P,P,P,P,X,X,X,X,X,X
-GS.7.2,No,,X,X,X,X,,,,,,P,,,P,X,X,X,X,X,X
-GS.7.3,No,,,X,X,X,X,X,X,X,X,,,,,,X,,X,X,X
+GS.7.2,No,,X,X,X,X,,,,,,P,,,P,X,X,,X,X,X
+GS.7.3,No,,,X,X,X,X,X,X,X,X,,,,,,X,X,X,X,X
 GS.7.4,No,X,,,X,X,,,,,,,,,,,,,,,
 GS.7.5,No,X,,,,X,,,,,,X,X,,,X,,,,,
 GS.7.6,No,X,,X,X,X,,,,,,,,,,,,,,,
