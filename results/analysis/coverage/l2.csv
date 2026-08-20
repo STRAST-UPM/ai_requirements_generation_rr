@@ -27,7 +27,7 @@ L2.8.2,Yes,,,
 L2.9.1,Yes,,,
 L2.9.2,Yes,,,
 L2.9.3,No,No,,
-L2.10.1,Yes,,,
+L2.10.1,No,,,
 L2.10.2,No,Yes,Template drift,Outside the scope of the requested NFR
 L2.10.3,No,No,,
 L2.10.4,Partial,No,,
