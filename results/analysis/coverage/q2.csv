@@ -20,8 +20,8 @@ Q2.9.1,No,No,,
 Q2.9.2,No,Yes,Architectural infeasibility,Out of the scope (not required technologies in use)
 Q2.9.3,Yes,,,
 Q2.9.4,Yes,,,
-Q2.9.5,Yes,No,,
-Q2.9.6,Yes,Yes,Architectural infeasibility,Overloaded
+Q2.9.5,No,No,,
+Q2.9.6,No,Yes,Architectural infeasibility,Overloaded: valid half is a discovery (GS.9.6); hallucinated half architecturally infeasible
 Q2.10.1,Yes,,,
 Q2.10.2,Yes,,,
 Q2.10.3,No,No,,

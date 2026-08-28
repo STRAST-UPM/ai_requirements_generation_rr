@@ -17,7 +17,7 @@ H.4.3,X,X,X,P,No
 H.4.4,X,,,,No
 H.4.5,X,X,X,P,No
 H.4.7,P,P,P,P,No
-H.4.8,P,,,,No
+H.4.8,,,,,No
 GS.4.9,X,,,,No
 GS.4.10,X,,,,No
 GS.4.11,X,,,,No
@@ -44,7 +44,7 @@ H.8.1,X,X,X,X,No
 GS.8.2,X,X,X,X,No
 L0_iii.8.5,,,X,,Yes
 H.9.1,X,X,X,X,No
-H.9.2,X,X,X,X,No
+H.9.2,X,X,,P,No
 H.9.3,X,X,X,X,No
 GS.9.4,X,X,X,X,No
 GS.9.8,,X,X,,No
@@ -54,6 +54,6 @@ GS.10.4,X,,,,No
 GS.10.5,,X,X,X,No
 GS.10.6,,,X,,No
 GS.10.11,X,X,X,X,No
-GS*.10.12,,,X,,No
+GS.10.12,,,X,,No
 L0_iv.10.4,,,,X,Yes
 L0_iv.10.5,,,,X,Yes
